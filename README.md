@@ -1,6 +1,8 @@
 # HTML Review Resource
 
-In groups, we will create a review resource for our class. Groups will be responsible for creating a 
+In groups, we will create a review resource for our class.
+
+Groups will create their respective pages and fill out the content within the templated sections.
 
 ## Group Assignments
 
