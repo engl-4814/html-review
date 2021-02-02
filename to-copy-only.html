@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!-- The main language of the page declared to english (en). If it's spanish, it'd be lang="es" -->
+<html lang="en">
+  <head>
+
+    <!-- Meta Tags -->
+    <title>TITLE GOES HERE</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- a viewport declaration which does not disable zooming -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Enter a brief description." />
+    <meta name="author" content="Enter your name here" />
+
+  </head>
+  <body>
+    <!--
+      A "skip link" for keyboard users.
+      You will hide it with CSS for visually-abled users.
+    -->
+    <a href="#main" id="skip-link">skip to main content</a>
+    <nav>
+      <!-- nav elements go within a semantic nav element -->
+      <ul>
+        <li>
+          Block Elements
+          <ul>
+            <li><a href="block/main.html"><code>main</code></a></li>
+            <li><a href="block/nav.html"><code>nav</code></a></li>
+            <li><a href="block/header.html"><code>header</code></a></li>
+            <li><a href="block/footer.html"><code>footer</code></a></li>
+            <li><a href="block/article.html"><code>article</code></a></li>
+            <li><a href="block/section.html"><code>section</code></a></li>
+            <li><a href="block/aside.html"><code>aside</code></a></li>
+            <li><a href="block/headings.html">headings</a></li>
+            <li><a href="block/lists.html">lists</a></li>
+            <li><a href="block/p.html"><code>p</code></a></li>
+            <li><a href="block/div.html"><code>div</code></a></li>
+          </ul>
+        </li>
+        <li>
+          Inline Elements
+          <ul>
+            <li><a href="inline/a.html"><code>a</code></a></li>
+            <li><a href="inline/img.html"><code>img</code></a></li>
+            <li><a href="inline/em.html"><code>em</code></a></li>
+            <li><a href="inline/strong.html"><code>strong</code></a></li>
+            <li><a href="inline/span.html"><code>span</code></a></li>
+          </ul>
+        </li>
+        <li>
+          Other Concepts
+          <ul>
+            <li><a href="concepts/head.html"><code>head</code></a></li>
+            <li><a href="concepts/contained-by.html">"Contained by"</a></li>
+            <li><a href="concepts/paths.html">Paths</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <header>
+      <!--
+        - H1 tags are typically reserved for the title of a page.
+        - The title should go before any content.
+        - Keyboard/screen reader users might use the keyboard key "h" to skip to the first heading.
+        - If any content is placed before this, it will be bypassed
+      -->
+      <h1>Title Here</h1>
+    </header>
+    <main id="#main">
+      <article>
+        <header>
+          <h2>Enter more specific heading</h2>
+        </header>
+        <!-- Enter definition from MDN in the blockquote element below -->
+        <blockquote id="definition">
+
+        </blockquote>
+        <section>
+          <!-- How is this element expected to be used? -->
+          <h3>Semantic Considerations</h3>
+        </section>
+        <section>
+          <!-- What display behaviors are noteworthy? -->
+          <h3>Behaviorial Considerations</h3>
+        </section>
+        <section>
+          <h3>Examples</h3>
+          <p>
+            [introduce example]
+          </p>
+          <!-- Pay attention to how pre elements observe all whitespace -->
+          <pre>
+
+          </pre>
+        </section>
+        <footer>
+          <!-- Enter linked resources with meaningful labels -->
+        </footer>
+      </article>
+    </main>
+  </body>
+</html>
