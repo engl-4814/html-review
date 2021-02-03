@@ -12,18 +12,21 @@
     <meta name="description" content="Enter a brief description." />
     <meta name="author" content="Enter your name here" />
 
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/nav.css" />
   </head>
   <body>
-    <!--
-      A "skip link" for keyboard users.
-      You will hide it with CSS for visually-abled users.
-    -->
-    <a href="#main" id="skip-link">skip to main content</a>
     <nav>
+      <header>
+        <h1>HTML Review Resources: <code>&lt;elementname&gt;</code></h1>
+        <p>
+          Informative byline here.
+        </p>
+      </header>
       <!-- nav elements go within a semantic nav element -->
       <ul>
         <li>
-          Block Elements
+          <a href="block/index.html">Block Elements</a>
           <ul>
             <li><a href="block/main.html"><code>main</code></a></li>
             <li><a href="block/nav.html"><code>nav</code></a></li>
@@ -39,7 +42,7 @@
           </ul>
         </li>
         <li>
-          Inline Elements
+          <a href="inline/index.html">Inline Elements</a>
           <ul>
             <li><a href="inline/a.html"><code>a</code></a></li>
             <li><a href="inline/img.html"><code>img</code></a></li>
@@ -49,7 +52,7 @@
           </ul>
         </li>
         <li>
-          Other Concepts
+          <a href="concepts/index.html">Other Concepts</a>
           <ul>
             <li><a href="concepts/head.html"><code>head</code></a></li>
             <li><a href="concepts/contained-by.html">"Contained by"</a></li>
@@ -58,23 +61,14 @@
         </li>
       </ul>
     </nav>
-    <header>
-      <!--
-        - H1 tags are typically reserved for the title of a page.
-        - The title should go before any content.
-        - Keyboard/screen reader users might use the keyboard key "h" to skip to the first heading.
-        - If any content is placed before this, it will be bypassed
-      -->
-      <h1>Title Here</h1>
-    </header>
     <main id="#main">
       <article>
         <header>
-          <h2>Enter more specific heading</h2>
+          <h2>Heading that frames the crux of the element</h2>
         </header>
         <!-- Enter definition from MDN in the blockquote element below -->
         <blockquote id="definition">
-
+          
         </blockquote>
         <section>
           <!-- How is this element expected to be used? -->

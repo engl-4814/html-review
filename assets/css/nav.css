@@ -1,0 +1,71 @@
+/* SHARED GENERAL STYLES */
+nav a, nav header {
+  color: white;
+  font-size: 18px;
+}
+
+/* DROPDOWN NAVIGATION MENU */
+nav {
+  display: flex;
+  background: #6a2c3e;
+  padding: 20px;
+}
+/* If viewport less than 935px, revert to block behavior */
+@media screen and (max-width: 935px) {
+  nav {
+    display: block;
+  }
+}
+
+/* Modify to inline behavior */
+nav ul {
+  display: inline;
+  margin: auto 0;
+}
+
+/* Use block behavior to stack anchors */
+nav ul a {
+  display: block;
+  text-decoration: none;
+}
+/* Pad every entry except the first */
+nav > ul > li:nth-child(n+2) {
+  padding: 0 15px;
+}
+
+/* Adjust top-level navigation links */
+nav ul li {
+  position: relative; /* Positions li horizontally */
+  float: left; /* Positions li on same row */
+  list-style-type: none;
+}
+
+/* Hide the nested dropdown menu */
+nav ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #6a2c3e;
+  padding: 0;
+}
+
+/* Set a width for the nested items */
+nav ul ul li {
+  width: 140px;
+}
+
+/* Pad nested menu anchors */
+ul ul a {
+  padding: 10px 15px;
+}
+
+/* Upon hover, display nested list */
+ul li:hover > ul {
+  display: block;
+}
+
+/* Upon hover, change background to burnt orange */
+ul ul li:hover {
+  background: #cf4520;
+}
