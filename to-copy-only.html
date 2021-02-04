@@ -1,5 +1,8 @@
 <!DOCTYPE html>
-<!-- The main language of the page declared to english (en). If it's spanish, it'd be lang="es" -->
+<!-- 
+  The main language of the page declared to english (en). 
+  If it's spanish, it'd be lang="es" 
+-->
 <html lang="en">
   <head>
 
@@ -17,7 +20,7 @@
   </head>
   <body>
     <nav>
-      <header>
+      <header role="banner">
         <h1>HTML Review Resources: <code>&lt;elementname&gt;</code></h1>
         <p>
           Informative byline here.
@@ -62,10 +65,11 @@
       </ul>
     </nav>
     <main>
-      <!-- 
-        Sources can include our James reading, videos, MDN, or 
-        other online sources such as Smashing Magazine or CSS Tricks.
-      -->
+      <!-- =============================================================
+        SOURCES
+          - Use and integrate our James reading, videos, MDN, or 
+            other online sources such as Smashing Magazine or CSS Tricks
+        ============================================================ -->
       <article>
         <header>
           <h2>Heading that frames the crux of the element</h2>
@@ -74,29 +78,45 @@
         <blockquote id="definition">
           
         </blockquote>
-        <section>
-          <!-- 
+
+        <!-- =============================================================
+          SEMANTICS
             - How is this element expected to be used?
             - What content is usually wrapped up by this element?
-          -->
+          ============================================================ -->
+        <section>
           <h3>Semantic Considerations</h3>
         </section>
+
+        <!-- =============================================================
+          ATTRIBUTES AND VALUES
+            - What attributes and values are important to understand?
+          ============================================================ -->
         <section>
-          <!-- What attributes and values are important to understand? -->
           <h3>Common Attributes and Values</h3>
         </section>
-        <section>
-          <!-- 
+
+        <!-- =============================================================
+          A11Y
             - What a11y practices are noteworthy?
             - According to MDN, you could include a role="alert" to a
               <p> tag "to notify a sight-challenged user that the 
               information is important and time-sensitive," which you 
               might otherwise convey through the visual design.
-          -->
+          ============================================================ -->
+        <section>
           <h3>Accessibility Considerations</h3>
         </section>
+
+        <!-- =============================================================
+          EXAMPLES
+            - Provide a 2-3 use cases for the element. Consider the 
+              <article> element and how Twitter uses it for tweets, while
+              blogs might use it for a post.
+            - Reuse the <p> - <pre> combination for each example.
+          ============================================================ -->
         <section>
-          <h3>Examples</h3>
+          <h3>Example Uses</h3>
           <p>
             [introduce example]
           </p>
@@ -106,11 +126,13 @@ Here is the second with no spaces
   Here is the third with 2 spaces added to it.
           </pre>
         </section>
-        <footer>
-          <!-- 
+
+        <!-- =============================================================
+          SOURCES AND RESOURCES
             - Enter linked sources and other resources within an 
               unordered list with links and meaningful labels. 
-          -->
+          ============================================================ -->
+        <footer role="contentinfo">
         </footer>
       </article>
     </main>
