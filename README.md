@@ -37,7 +37,6 @@ I suggest that each group consider the following workflow:
 
 - Everyone set their code editors to 2 spaces for this class to ensure consistency.
 - Divide up the content work.
-- Agree to have completed a full draft by Monday at the latest.
 - Commit and push changes as you make them, not in one big chunk.
 - Once you've complete a full draft, open any issues with your group about your code/content or their code/content. 
   - Be sure to consider attention to indentation schemes, tag completion, and semantic usage of new elements.
