@@ -7,7 +7,7 @@
   <head>
 
     <!-- Meta Tags -->
-    <title>TITLE GOES HERE</title>
+    <title>Aside Page</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- a viewport declaration which does not disable zooming -->
@@ -21,9 +21,9 @@
   <body>
     <nav>
       <header role="banner">
-        <h1>HTML Review Resources: <code>&lt;elementname&gt;</code></h1>
+        <h1>HTML Review Resources: <code>&lt;Aside&gt;</code></h1>
         <p>
-          Informative byline here.
+          The aside element is used to help structure content on a webpage. Aside elements wrap around content that you want to go off to the side of your webpage.
         </p>
       </header>
       <!-- nav elements go within a semantic nav element -->
@@ -72,11 +72,11 @@
         ============================================================ -->
       <article>
         <header>
-          <h2>Heading that frames the crux of the element</h2>
+          <h2>Aside elements are used for content that goes to the side</h2>
         </header>
         <!-- Enter definition from MDN in the blockquote element below -->
         <blockquote id="definition">
-          Content complementary to the main content. Typically displayed as a sidebar.
+          MDN definition of aside: The HTML aside element represents a portion of a document whose content is only indirectly related to the document's main content. Asides are frequently presented as sidebars or call-out boxes.
         </blockquote>
 
         <!-- =============================================================
@@ -86,6 +86,7 @@
           ============================================================ -->
         <section>
           <h3>Semantic Considerations</h3>
+          <p>This element is a "content sectioning" element, so you should use this element to wrap around any elements you'd like in that section, much like section and article elements, except aside elements should be used to mark content that is indirectly related to the main content. Aside elements typically wrap written content, such as headings, paragraphs, and lists or embedded content, and they can be wrapped within body or footer elements as well as inside section, article, and even paragraph elements.</p>
         </section>
 
         <!-- =============================================================
@@ -97,7 +98,9 @@
         <section>
           <h3>Common Attributes and Values</h3>
           <ul>
-              <li></li>
+              <li>aria-label attribute if there are multiple aside/ complementary elements on the page to help assistive technologies</li>
+              <li>Any global attributes</li>
+              <li>Any event attributes</li>
           </ul>
         </section>
 
@@ -111,6 +114,18 @@
           ============================================================ -->
         <section>
           <h3>Accessibility Considerations</h3>
+          <p>Using the aside element should automatically communicate to assistive technology that the content is separated from the main content on the page, which takes care of the ARIA role=complementary, but you may still want to include this role.</p>
+          <p>If there's more than one complementary or aside element on the page, you should provide a descriptive label for each landmark using the aria-label attribute: aria-label=""; so that assistive technology can identify the purpose of each landmark element. </p>
+          <p>Other permitted ARIA roles include:
+            <ul>
+              <li>feed</li>
+              <li>none</li>
+              <li>note</li>
+              <li>presentation</li>
+              <li>region</li>
+              <li>search</li>
+            </ul>
+          </p>
         </section>
 
         <!-- =============================================================
@@ -139,6 +154,9 @@ Here is the second with no spaces
           ============================================================ -->
         <footer role="contentinfo">
           <p>https://www.w3schools.com/tags/tag_aside.asp</p>
+          <p>https://html.com/tags/aside/</p>
+          <p>https://developer.mozilla.org/en-US/docs/Web/HTML/Element/aside</p>
+          <p>https://www.a11ymatters.com/article/intro-html5-sectioning-elements/</p>
         </footer>
       </article>
     </main>
