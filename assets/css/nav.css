@@ -7,6 +7,7 @@ nav a, nav header {
 /* DROPDOWN NAVIGATION MENU */
 nav {
   display: flex;
+  justify-content: center;
   background: #6a2c3e;
   padding: 20px;
 }
