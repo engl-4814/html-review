@@ -17,6 +17,10 @@ nav {
   }
 }
 
+nav header {
+  max-width: 405px;
+}
+
 /* Modify to inline behavior */
 nav ul {
   display: inline;
