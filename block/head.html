@@ -108,8 +108,8 @@ information about the page such as the name(s) of the author(s).
           <h3>Common Attributes and Values</h3>
             <ul>
               <li>Title</li>
-              <li>charset</li>
-              <li>name and content</li>
+              <li>Charset</li>
+              <li>Name and content</li>
               <li>Basically any data to format page that you do not want readers to see in writing</li>
             </ul>
         </section>
@@ -136,7 +136,12 @@ information about the page such as the name(s) of the author(s).
         <section>
           <h3>Example Uses</h3>
           <p>
-            [introduce example]
+            <ul>
+            <li>meta Name="Authors" Content="Benji Andrews and Emma Chan"</li>
+            <li>meta charset="utf-8"</li>
+            <li>meta name="viewport" content="width=device-width, initial-scale=1"</li>
+            <li>These examples should be encased in <> but doing so makes them not visible to reader(s)</li>
+            </ul>
           </p>
           <!-- Pay attention to how pre elements observe all whitespace -->
           <pre>Here is the first line
@@ -150,7 +155,9 @@ Here is the second with no spaces
             - Enter linked sources and other resources within an 
               unordered list with links and meaningful labels. 
           ============================================================ -->
-        <footer role="contentinfo">
+          <section>
+          <footer role="contentinfo">
+          <h3>Sources and resources</h3>
           <ul>
             <li>
 https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML</li>
@@ -160,6 +167,7 @@ https://htmlhead.dev/</li>
 https://www.w3docs.com/learn-html/html-head-tag.html
             </li>
           </ul>
+        </section>
         </footer>
       </article>
     </main>
