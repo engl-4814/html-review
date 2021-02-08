@@ -21,7 +21,7 @@
   <body>
     <nav>
       <header role="banner">
-        <h1>HTML Review Resources: <code>&lt;elementname&gt;</code></h1>
+        <h1>HTML Review Resources: <code>&lt;Main&gt;</code></h1>
         <p>
           The main element designates where the primary content of your web page goes, i.e. the purpose of your web page.
         </p>
@@ -76,7 +76,7 @@
         </header>
         <!-- Enter definition from MDN in the blockquote element below -->
         <blockquote id="definition">
-          
+          The HTML [main] element represents the dominant content of the body of a document. The main content area consists of content that is directly related to or expands upon the central topic of a document, or the central functionality of an application.
         </blockquote>
 
         <!-- =============================================================
@@ -86,7 +86,7 @@
           ============================================================ -->
         <section>
           <h3>Semantic Considerations</h3>
-          <p>main is where the primary content (the purpose) of the web page goes. Artical, heading, and paragraph tags are typically wrapped in the main tags.</p>
+          <p>Main is where the primary content (the purpose) of the web page goes. Artical, heading, and paragraph tags are typically wrapped in the main tags.</p>
         </section>
 
         <!-- =============================================================
@@ -97,6 +97,10 @@
           ============================================================ -->
         <section>
           <h3>Common Attributes and Values</h3>
+          <ul>
+            <li>global attributes</li>
+            <li>role attribute is important for accessibility</li>
+          </ul>
         </section>
 
         <!-- =============================================================
@@ -128,8 +132,12 @@
         <section>
           <h3>Example Uses</h3>
           <p>
-            [introduce example]
+            Main doesn't contribute to the DOM's structure; it's purely informational.
           </p>
+          <p>
+            Main should wrap content that is unique to the page, not repeated across a set of documents.
+          </p>
+          <p>Main goes in the body section and can wrap headings, paragraphs, and articles.</p>
           <!-- Pay attention to how pre elements observe all whitespace -->
           <pre>Here is the first line
 Here is the second with no spaces
@@ -148,6 +156,7 @@ Here is the second with no spaces
               <li>https://www.youtube.com/watch?v=IhWMou12_Vk</li>
               <li>https://www.nomensa.com/blog/2010/what-are-wai-aria-document-landmark-roles</li>
               <li>https://www.washington.edu/accessibility/web/landmarks/</li>
+              <li>https://www.w3schools.com/tags/tag_main.asp</li>
           </ul>
         </footer>
       </article>
