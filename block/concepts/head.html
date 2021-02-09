@@ -7,6 +7,7 @@
   <head>
 
     <!-- Meta Tags -->
+    
     <title>Head</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,7 +17,7 @@
     <meta name="author" content="Chaitra Katragadda, Tyler Pozarycki" />
 
     <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="../assets/css/base.css" />
+    <link rel="stylesheet" type="text/css" href="../../assets/css/base.css" />
   </head>
   <body>
     <nav>
@@ -107,10 +108,10 @@ information about the page such as the name(s) of the author(s).
         <section>
           <h3>Common Attributes and Values</h3>
             <ul>
-              <li>Title</li>
-              <li>Charset</li>
-              <li>Name and content</li>
-              <li>Basically any data to format page that you do not want readers to see in writing</li>
+              <li>global attributes</li>
+              <li>profile</li>
+              <li>media</li>
+              <li>type</li>
             </ul>
         </section>
 
@@ -125,9 +126,8 @@ information about the page such as the name(s) of the author(s).
         <section>
           <h3>Accessibility Considerations</h3>
             <ul>
-              <li>These examples should be encased in <> but doing so makes them not visible to reader(s)</li>
-              <li>Meta data will not be displayed to reader</li>
-              <li>Ensure you check your meta data thoruoughly to ensure webpage is being developed correctly</li>
+              <li>Meta data will not be displayed to reader, it is just to provide information about the webpage</li>
+              <li><code>&lt;title&gt;</code> element is necessary to provide a purpose for the page.</li>
             </ul>
         </section>
 
@@ -141,18 +141,26 @@ information about the page such as the name(s) of the author(s).
         <section>
           <h3>Example Uses</h3>
           <p>
-            <ul>
-            <li>meta Name="Authors" Content="Benji Andrews and Emma Chan"</li>
-            <li>meta charset="utf-8"</li>
-            <li>meta name="viewport" content="width=device-width, initial-scale=1"</li>
-            <li>meta name="viewport" content="width=device-width, initial-scale=1"</li>
-            </ul>
+            Head is used after the opening html tag to wrap around meta data and provide a title for the webpage.
+            It has 2 elements, title and meta. The title is used to provide a purpose for the page and also displays
+            the title of the webpage on the browser window and the tab. The meta tag is used to provide information 
+            about the webpage which is not visible to the reader. 
+            <br>
+            <br>
+            <code>
+              &lt;!doctype html&gt;
+              <br>
+              &lt;html&gt;
+              <br>
+                &lt;head&gt;
+                <pre>   &lt;title&gt;Documents Title&lt;/title&gt;
+   &lt;meta name="description" content="A review page for the block element 'head.'" /&gt;
+   &lt;meta name="author" content="Chaitra Katragadda, Tyler Pozarycki" /&gt;</pre>
+                &lt;/head&gt;
+                <br>
+              &lt;/html&gt;
+            </code>
           </p>
-          <!-- Pay attention to how pre elements observe all whitespace -->
-          <pre>Here is the first line
-Here is the second with no spaces
-  Here is the third with 2 spaces added to it.
-          </pre>
         </section>
 
         <!-- =============================================================
