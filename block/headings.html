@@ -7,13 +7,13 @@
   <head>
 
     <!-- Meta Tags -->
-    <title>TITLE GOES HERE</title>
+    <title>Heading Elements</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- a viewport declaration which does not disable zooming -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Enter a brief description." />
-    <meta name="author" content="Enter your name here" />
+    <meta name="description" content="Addings different headings to divide up sections." />
+    <meta name="author" content="Logan Vance" />
 
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="../assets/css/base.css" />
@@ -21,9 +21,9 @@
   <body>
     <nav>
       <header role="banner">
-        <h1>HTML Review Resources: <code>&lt;img&gt;</code></h1>
+        <h1>HTML Review Resources: <code>&lt;Headings 1-6&gt;</code></h1>
         <p>
-          The img element imbeds an image into the document
+          The heading elements create new and different headings to signal new sections in the HTML document.
         </p>
       </header>
       <!-- nav elements go within a semantic nav element -->
@@ -72,11 +72,12 @@
         ============================================================ -->
       <article>
         <header>
-          <h2>What is the img attribute?</h2>
+          <h2>Headings Signify a New Section</h2>
         </header>
         <!-- Enter definition from MDN in the blockquote element below -->
         <blockquote id="definition">
-          The img element is the main way html imbeds images into webpages!
+          "The HTML h1–h6 elements represent six levels of section headings. 
+          h1 is the highest section level and h6 is the lowest."
         </blockquote>
 
         <!-- =============================================================
@@ -86,7 +87,13 @@
           ============================================================ -->
         <section>
           <h3>Semantic Considerations</h3>
-          
+          <p>
+            Headings are the rpimary way to mark different sections of content. Headings 
+            can help guide the user to a specific section they want to view, making it easier 
+            to search through the web page. There are six differnt types of headings, h1-h6. 
+            The higher the number, the less prominent the heading, so the first heading on a 
+            page is usually h1.
+          </p>
         </section>
 
         <!-- =============================================================
@@ -97,13 +104,9 @@
           ============================================================ -->
         <section>
           <h3>Common Attributes and Values</h3>
-          <ul>
-            <li><strong>src</strong></li>
-            <li><strong>alt</strong></li>
-            <li><strong>Referrer</strong> and <strong>crossorigin</strong></li>
-            <li><strong>Width</strong> and <strong>height</strong></li>
-            <li><strong>Sizes</strong> and <strong>srcset</strong></li>
-          </ul>
+          <p>
+            All heading elements only include the global attributes.
+          </p>
         </section>
 
         <!-- =============================================================
@@ -116,10 +119,17 @@
           ============================================================ -->
         <section>
           <h3>Accessibility Considerations</h3>
-          <ul>
-            <li>The <strong>src</strong> attribute is required and contains the path to the image you want to imbed</li>
-            <li>The <strong>alt</strong> attribute is not required but provides text description of image; is extremely helpful for accessability</li>
-          </ul>
+          <p>
+            All heading elements have the Implicit ARIA role of 'heading'.
+          </p>
+          <p>
+            All heading elements have the following Permitted ARIA roles;
+            <ul>
+              <li>tab</li>
+              <li>presentation</li>
+              <li>none</li>
+            </ul>
+          </p>
         </section>
 
         <!-- =============================================================
@@ -132,27 +142,17 @@
         <section>
           <h3>Example Uses</h3>
           <p>
-            <ul>
-              <li>
-            <img src="https://developer.mozilla.org/static/img/favicon144.png"
-                  alt="MDN Logo">
-                  </li>
-              <li>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/b/bb/Baby_Turtle.jpg"
-                  alt="A Baby Turtle"
-                  width="200" height="100">
-                  </li>
-              <li>
-                &lt;<img src="https://upload.wikimedia.org/wikipedia/commons/b/bb/Baby_Turtle.jpg"
-                  alt="A Baby Turtle"
-                  width="200" height="100">&gt;
-              </li>
-                  </ul>
+            Add a Heading 1 to the page.
           </p>
           <!-- Pay attention to how pre elements observe all whitespace -->
-          <pre>Here is the first line
-Here is the second with no spaces
-  Here is the third with 2 spaces added to it.
+          <pre><h1>Here is the first Heading</h1>
+          </pre>
+          <p>
+            Add a Heading 1 and Heading 2 to the page.
+          </p>
+          <!-- Pay attention to how pre elements observe all whitespace -->
+          <pre><h1>Here is the First Heading</h1>
+<h2>Here is the Second Heading</h2>
           </pre>
         </section>
 
@@ -162,12 +162,12 @@ Here is the second with no spaces
               unordered list with links and meaningful labels. 
           ============================================================ -->
         <footer role="contentinfo">
-          <section>
-            <h3>Sources and Resources</h3>
-            <ul>
-              <li>https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img</li>
-            </ul>
-          </section>
+          <ul>
+            <li><a href='https://www.internetingishard.com/html-and-css/basic-web-pages/#headings'>
+              Basic Web Pages Tutorial | HTML & CSS Is Hard</a></li>
+            <li><a href='https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements'>
+              h1–h6: The HTML Section Heading elements via Mozilla Developer Network</a></li>
+          </ul>
         </footer>
       </article>
     </main>
