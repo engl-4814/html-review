@@ -23,7 +23,7 @@
       <header role="banner">
         <h1>HTML Review Resources: <code>&lt;Header&gt;</code></h1>
         <p>
-          The <strong>&lt;header&gt;</strong> element is used primarily to make banners for webpages (this part is the header!)
+          The <strong>header</strong> element is used primarily to make banners for webpages (this part is the header!)
         </p>
       </header>
       <!-- nav elements go within a semantic nav element -->
@@ -86,6 +86,10 @@
           ============================================================ -->
         <section>
           <h3>Semantic Considerations</h3>
+          <ul>
+              <li>The <strong>header</strong> element cannot be used inside of elements such as <strong>footer</strong> or inside of another <strong>header</strong> element</li>
+              <li>You can place images, web addresses, or links as/in your header</li>
+          </ul>
           
         </section>
 
@@ -98,7 +102,7 @@
         <section>
           <h3>Common Attributes and Values</h3>
           <ul>
-              <li>The only attributes used by <strong>&gt;header&lt;</strong> are global attributes</li>
+              <li>The only attributes used by <strong>header</strong> are global attributes</li>
           </ul>
         </section>
 
@@ -112,6 +116,9 @@
           ============================================================ -->
         <section>
           <h3>Accessibility Considerations</h3>
+          <ul>
+              <li>Screen readers will not read <strong>header</strong> as a header if semantic considerations are not followed</li>
+          </ul>
         </section>
 
         <!-- =============================================================
