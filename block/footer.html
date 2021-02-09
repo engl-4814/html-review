@@ -7,13 +7,13 @@
   <head>
 
     <!-- Meta Tags -->
-    <title>Head</title>
+    <title>Footer</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- a viewport declaration which does not disable zooming -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="A review page for the block element 'head.'" />
-    <meta name="author" content="Chaitra Katragadda, Tyler Pozarycki" />
+    <meta name="description" content="Enter a brief description." />
+    <meta name="author" content="Enter your name here" />
 
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="../assets/css/base.css" />
@@ -21,9 +21,9 @@
   <body>
     <nav>
       <header role="banner">
-        <h1>HTML Review Resources: <code>&lt;head&gt;</code></h1>
+        <h1>HTML Review Resources: <code>&lt;Footer&gt;</code></h1>
         <p>
-          Used to wrap around metadata for a page
+          The footer element helps structure the bottom of a page. 
         </p>
       </header>
       <!-- nav elements go within a semantic nav element -->
@@ -72,12 +72,11 @@
         ============================================================ -->
       <article>
         <header>
-          <h2>MDN Definition of <code>&lt;head&gt;</code>:</h2>
+          <h2>The Bottom of the Webpage</h2>
         </header>
         <!-- Enter definition from MDN in the blockquote element below -->
         <blockquote id="definition">
-          The HTML <code>&lt;head&gt;</code> element contains machine-readable information (metadata) 
-about the document, like its title, scripts, and style sheets.
+          A footer typically contains information about the author of the section, copyright data or links to related documents.
         </blockquote>
 
         <!-- =============================================================
@@ -87,15 +86,7 @@ about the document, like its title, scripts, and style sheets.
           ============================================================ -->
         <section>
           <h3>Semantic Considerations</h3>
-          <p>The <code>&lt;head&gt;</code> element is typically used at the beginning of a file, within 
-the <code>&lt;html&gt;</code> element. Usually, the <code>&lt;head&gt;</code> element contains the 
-<code>&lt;title&gt;</code> element, which is used to give a name to the tab of the webpage (look at this
-page's title on its tab!). The <code>&lt;head&gt;</code> element also typically includes the 
-<code>&lt;meta&gt;</code> element, which wraps around metadata for the file. Metadata is not seen on the 
-webpage itself, but it may define the character set, scale the webpage to a certain size, or provide 
-information about the page such as the name(s) of the author(s).
-          </p>
-          
+          <p>Footer elements usually wrap copyright information, as well as information about the author. Sometimes, links to other webpages are wrapped in the footer.  </p>
         </section>
 
         <!-- =============================================================
@@ -106,12 +97,7 @@ information about the page such as the name(s) of the author(s).
           ============================================================ -->
         <section>
           <h3>Common Attributes and Values</h3>
-            <ul>
-              <li>Title</li>
-              <li>Charset</li>
-              <li>Name and content</li>
-              <li>Basically any data to format page that you do not want readers to see in writing</li>
-            </ul>
+          <p>The footer element has global attributes and event attributes. </p>
         </section>
 
         <!-- =============================================================
@@ -124,11 +110,7 @@ information about the page such as the name(s) of the author(s).
           ============================================================ -->
         <section>
           <h3>Accessibility Considerations</h3>
-            <ul>
-              <li>These examples should be encased in <> but doing so makes them not visible to reader(s)</li>
-              <li>Meta data will not be displayed to reader</li>
-              <li>Ensure you check your meta data thoruoughly to ensure webpage is being developed correctly</li>
-            </ul>
+          <p>A11Y refers to the footer element as "contentinfo" when it is in the body. </p>
         </section>
 
         <!-- =============================================================
@@ -141,12 +123,16 @@ information about the page such as the name(s) of the author(s).
         <section>
           <h3>Example Uses</h3>
           <p>
-            <ul>
-            <li>meta Name="Authors" Content="Benji Andrews and Emma Chan"</li>
-            <li>meta charset="utf-8"</li>
-            <li>meta name="viewport" content="width=device-width, initial-scale=1"</li>
-            <li>meta name="viewport" content="width=device-width, initial-scale=1"</li>
-            </ul>
+            Copyright information
+          </p>
+          <p>
+           Author and contact information
+          </p>
+          <p>
+            Sitemap
+          </p>
+          <p>
+            Realted documents and links
           </p>
           <!-- Pay attention to how pre elements observe all whitespace -->
           <pre>Here is the first line
@@ -161,18 +147,14 @@ Here is the second with no spaces
               unordered list with links and meaningful labels. 
           ============================================================ -->
           <section>
-          <footer role="contentinfo">
-          <h3>Sources and Resources</h3>
-          <ul>
-            <li>
-https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML</li>
-            <li>
-https://htmlhead.dev/</li>
-            <li>
-https://www.w3docs.com/learn-html/html-head-tag.html
-            </li>
-          </ul>
-        </section>
+            <h3>Sources</h3>
+            <ul>
+              <li>https://developer.mozilla.org/en-US/docs/Web/HTML/Element/footer</li>
+              <li>https://www.w3schools.com/tags/tag_footer.asp</li>
+              <li>https://www.w3.org/TR/wai-aria-practices/#html-sectioning-elements</li>
+            </ul>
+          </section>
+        <footer role="contentinfo">
         </footer>
       </article>
     </main>

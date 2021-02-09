@@ -7,23 +7,24 @@
   <head>
 
     <!-- Meta Tags -->
-    <title>Amy and Tyler's Website</title>
+    
+    <title>Head</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- a viewport declaration which does not disable zooming -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="A simple website that does not contain much content." />
-    <meta name="author" content="Amy and Tyler" />
+    <meta name="description" content="A review page for the block element 'head.'" />
+    <meta name="author" content="Chaitra Katragadda, Tyler Pozarycki" />
 
     <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="../assets/css/base.css" />
+    <link rel="stylesheet" type="text/css" href="../../assets/css/base.css" />
   </head>
   <body>
     <nav>
       <header role="banner">
-        <h1>HTML Review Resources: <code>&lt;elementname&gt;</code></h1>
+        <h1>HTML Review Resources: <code>&lt;head&gt;</code></h1>
         <p>
-          A website to practice html built by Amy and Tyler.
+          Used to wrap around metadata for a page
         </p>
       </header>
       <!-- nav elements go within a semantic nav element -->
@@ -72,30 +73,32 @@
         ============================================================ -->
       <article>
         <header>
-          <h2>MDN Definitions</h2>
+          <h2>MDN Definition of <code>&lt;head&gt;</code>:</h2>
         </header>
         <!-- Enter definition from MDN in the blockquote element below -->
-        <blockquote id="The HTML <nav> element represents a section of a page whose purpose is to provide 
-          navigation links, either within the current document or to other documents. 
-          Common examples of navigation sections are menus, tables of contents, and indexes.">
-          
+        <blockquote id="definition">
+          The HTML <code>&lt;head&gt;</code> element contains machine-readable information (metadata) 
+about the document, like its title, scripts, and style sheets.
         </blockquote>
-       
+
         <!-- =============================================================
           SEMANTICS
             - How is this element expected to be used?
             - What content is usually wrapped up by this element?
           ============================================================ -->
-           <section>
+        <section>
           <h3>Semantic Considerations</h3>
-          <p>
-            This element is expected to be used to signify when navigation items will be listed.
-            Content that is normally wrapped up by the nav element are lists. 
-            Not all navigation items need to be contained by the nav element, the footer element often includes links,
-            but for significant blocks of links it should be.
-            List applications include menus, indexes, categories, external links, tables of contents, and more.
+          <p>The <code>&lt;head&gt;</code> element is typically used at the beginning of a file, within 
+the <code>&lt;html&gt;</code> element. Usually, the <code>&lt;head&gt;</code> element contains the 
+<code>&lt;title&gt;</code> element, which is used to give a name to the tab of the webpage (look at this
+page's title on its tab!). The <code>&lt;head&gt;</code> element also typically includes the 
+<code>&lt;meta&gt;</code> element, which wraps around metadata for the file. Metadata is not seen on the 
+webpage itself, but it may define the character set, scale the webpage to a certain size, or provide 
+information about the page such as the name(s) of the author(s).
           </p>
+          
         </section>
+
         <!-- =============================================================
           ATTRIBUTES AND VALUES
             - What attributes and values are important to understand?
@@ -104,11 +107,12 @@
           ============================================================ -->
         <section>
           <h3>Common Attributes and Values</h3>
-          <p>
-            Only global attributes apply to the nav element. 
-            Global attributes are shared by all html elements.
-            The a element, or anchor element, is used to link URL addresses. 
-          </p>
+            <ul>
+              <li>global attributes</li>
+              <li>profile</li>
+              <li>media</li>
+              <li>type</li>
+            </ul>
         </section>
 
         <!-- =============================================================
@@ -119,16 +123,12 @@
               information is important and time-sensitive," which you 
               might otherwise convey through the visual design.
           ============================================================ -->
-
         <section>
           <h3>Accessibility Considerations</h3>
-          <p>
-            To improve accessibility to the nav element, aria-labelledby can be use.
-            According to the MDN website, the aria-labelledby attribute 
-            "establishes relationships between objects and their label(s), 
-            and its value should be one or more element IDs, 
-            which refer to elements that have the text needed for labeling"
-          </p>
+            <ul>
+              <li>Meta data will not be displayed to reader, it is just to provide information about the webpage</li>
+              <li><code>&lt;title&gt;</code> element is necessary to provide a purpose for the page.</li>
+            </ul>
         </section>
 
         <!-- =============================================================
@@ -141,35 +141,46 @@
         <section>
           <h3>Example Uses</h3>
           <p>
-            The HTML &lt;article&gt;
+            Head is used after the opening html tag to wrap around meta data and provide a title for the webpage.
+            It has 2 elements, title and meta. The title is used to provide a purpose for the page and also displays
+            the title of the webpage on the browser window and the tab. The meta tag is used to provide information 
+            about the webpage which is not visible to the reader. 
+            <br>
+            <br>
+            <code>
+              &lt;!doctype html&gt;
+              <br>
+              &lt;html&gt;
+              <br>
+                &lt;head&gt;
+                <pre>   &lt;title&gt;Documents Title&lt;/title&gt;
+   &lt;meta name="description" content="A review page for the block element 'head.'" /&gt;
+   &lt;meta name="author" content="Chaitra Katragadda, Tyler Pozarycki" /&gt;</pre>
+                &lt;/head&gt;
+                <br>
+              &lt;/html&gt;
+            </code>
           </p>
-          <p>
-            Twitter: uses &lt;article&gt; for tweets 
-          </p>
-          <p>
-            Blogs: uses &lt;article&gt; for posts
-          </p>
-          <blockquote id= "Here is the first line
-          Here is the second with no spaces
-            Here is the third with 2 spaces added to it.">
-          </blockquote>
-          <!-- Pay attention to how pre elements observe all whitespace -->
-          <pre>
-          </pre>
         </section>
+
         <!-- =============================================================
           SOURCES AND RESOURCES
             - Enter linked sources and other resources within an 
               unordered list with links and meaningful labels. 
           ============================================================ -->
-        <footer role="contentinfo">
+          <section>
+          <footer role="contentinfo">
+          <h3>Sources and Resources</h3>
           <ul>
-            <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav">The Navigation Section Element</a></li>
-            <li><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Navigation_Role">The Navigation Role</a></li>
-            <li><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-labelledby_attribute">Using the aria-labelledby attribute</a></li>
-            <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes">Global Attributes</a></li>
+            <li>
+https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML</li>
+            <li>
+https://htmlhead.dev/</li>
+            <li>
+https://www.w3docs.com/learn-html/html-head-tag.html
+            </li>
           </ul>
-          <li><a href=https://stackoverflow.com/questions/6817262/how-to-display-html-tags-as-plain-text</a></a>li></ul>
+        </section>
         </footer>
       </article>
     </main>
