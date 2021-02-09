@@ -7,13 +7,13 @@
   <head>
 
     <!-- Meta Tags -->
-    <title>Section Element</title>
+    <title>TITLE GOES HERE</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- a viewport declaration which does not disable zooming -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Dividing the web page into different sections" />
-    <meta name="author" content="Logan Vance and Kate Stafford" />
+    <meta name="description" content="Enter a brief description." />
+    <meta name="author" content="Andrews & Chan" />
 
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="../assets/css/base.css" />
@@ -21,9 +21,9 @@
   <body>
     <nav>
       <header role="banner">
-        <h1>HTML Review Resources: <code>&lt;Section&gt;</code></h1>
+        <h1>HTML Review Resources: <code>&lt;Header&gt;</code></h1>
         <p>
-          The section element wraps around a standalone section in the HTML document.
+          The <strong>header</strong> element is used primarily to make banners for webpages (this part is the header!)
         </p>
       </header>
       <!-- nav elements go within a semantic nav element -->
@@ -72,14 +72,11 @@
         ============================================================ -->
       <article>
         <header>
-          <h2>Creating a Standalone Section</h2>
+          <h2>MDN definition of the element</h2>
         </header>
         <!-- Enter definition from MDN in the blockquote element below -->
         <blockquote id="definition">
-
-          "The HTML section element represents a standalone section — which doesn't have 
-          a more specific semantic element to represent it — contained within an HTML document. 
-          Typically, but not always, sections have a heading."
+            The HTML header element represents introductory content, typically a group of introductory or navigational aids. It may contain some heading elements but also a logo, a search form, an author name, and other elements.
         </blockquote>
 
         <!-- =============================================================
@@ -89,13 +86,11 @@
           ============================================================ -->
         <section>
           <h3>Semantic Considerations</h3>
-          <p>
-            The section element is flexible, and can be used to start any kind of new information. 
-            Usually the section element is used to section off any new information in the HTML, 
-            whether this be a new section following the same format, or a new section in a different 
-            format. Headings are also normally used at the beginning of sections to specify the start 
-            of a new section.
-          </p>
+          <ul>
+              <li>The <strong>header</strong> element cannot be used inside of elements such as <strong>footer</strong> or inside of another <strong>header</strong> element</li>
+              <li>You can place images, web addresses, or links as/in your header</li>
+          </ul>
+          
         </section>
 
         <!-- =============================================================
@@ -106,9 +101,9 @@
           ============================================================ -->
         <section>
           <h3>Common Attributes and Values</h3>
-          <p>
-            The section element only includes the global attributes.
-          </p>
+          <ul>
+              <li>The only attributes used by <strong>header</strong> are global attributes</li>
+          </ul>
         </section>
 
         <!-- =============================================================
@@ -121,34 +116,9 @@
           ============================================================ -->
         <section>
           <h3>Accessibility Considerations</h3>
-          <p>
-            The section element has the Implicit ARIA role of region, but only if the element 
-            has an accessible name. Otherwise, there would be no corresponding role. 
-          </p>
-          <p>
-            The section element has the following Permitted ARIA roles:
-            <ul>
-              <li>alert</li>
-              <li>alertdialog</li>
-              <li>application</li>
-              <li>banner</li>
-              <li>complementary</li>
-              <li>contentinfo</li>
-              <li>dialog</li>
-              <li>document</li>
-              <li>feed</li>
-              <li>log</li>
-              <li>main</li>
-              <li>marquee</li>
-              <li>navigation</li>
-              <li>none</li>
-              <li>note</li>
-              <li>presentation</li>
-              <li>search</li>
-              <li>status</li>
-              <li>tabpanel</li>
-            </ul>
-          </p>
+          <ul>
+              <li>Screen readers will not read <strong>header</strong> as a header if semantic considerations are not followed</li>
+          </ul>
         </section>
 
         <!-- =============================================================
@@ -161,26 +131,22 @@
         <section>
           <h3>Example Uses</h3>
           <p>
-            Creating two different sections within the main element, 
-            having them describe different ideas.
+              <ul>
+                <li>
+            <header class="page-header">
+                <h1>This is a header!</h1>
+            </header>
+                </li>
+                <li>
+                    &lt;header class="page-header"&gt;
+                    &lt;h1&gt; This is a header &lt;/h1&gt;
+                </li>
+            </ul>
           </p>
           <!-- Pay attention to how pre elements observe all whitespace -->
-          <pre><section>
-<h4>The First Task</h4>
-<p>The first task that must be completed</p></section>
-<section><h4>The Second Task</h4>
-<p>The second task that must be completed</p></section>
-          </pre>
-          <p>
-            Creating two different sections within the footer element, 
-            having them contain different links.
-          </p>
-          <!-- Pay attention to how pre elements observe all whitespace -->
-          <pre><footer><section>
-<h4>Social Media Links</h4>
-<p>Linked Link</p></section>
-<section><h4>Resources Links</h4>
-<p>Mozilla Developer Network Link</p></section></footer>
+          <pre>Here is the first line
+Here is the second with no spaces
+  Here is the third with 2 spaces added to it.
           </pre>
         </section>
 
@@ -190,12 +156,12 @@
               unordered list with links and meaningful labels. 
           ============================================================ -->
         <footer role="contentinfo">
-          <ul>
-            <li><a href='https://www.linkedin.com/learning/html-essential-training-4/structuring-content?u=57888345'>
-              Jen Simmons on Structuring Content via LinkedIn Learning</a></li>
-            <li><a href='https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section'>
-              section: The Generic Section element via Mozilla Developer Network</a></li>
-          </ul>
+            <section>
+                <h3>Sources and Resources</h3>
+                <ul>
+                    <li>https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header</li>
+                </ul>
+            </section>
         </footer>
       </article>
     </main>

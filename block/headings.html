@@ -7,12 +7,13 @@
   <head>
 
     <!-- Meta Tags -->
-    <title>Section Element</title>
+    <title>Heading Elements</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- a viewport declaration which does not disable zooming -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Dividing the web page into different sections" />
+    <meta name="description" content="Addings different headings to divide up sections." />
+    <meta name="author" content="Logan Vance" />
     <meta name="author" content="Logan Vance and Kate Stafford" />
 
     <!-- CSS -->
@@ -21,9 +22,9 @@
   <body>
     <nav>
       <header role="banner">
-        <h1>HTML Review Resources: <code>&lt;Section&gt;</code></h1>
+        <h1>HTML Review Resources: <code>&lt;Headings 1-6&gt;</code></h1>
         <p>
-          The section element wraps around a standalone section in the HTML document.
+          The heading elements create new and different headings to signal new sections in the HTML document.
         </p>
       </header>
       <!-- nav elements go within a semantic nav element -->
@@ -72,14 +73,12 @@
         ============================================================ -->
       <article>
         <header>
-          <h2>Creating a Standalone Section</h2>
+          <h2>Headings Signify a New Section</h2>
         </header>
         <!-- Enter definition from MDN in the blockquote element below -->
         <blockquote id="definition">
-
-          "The HTML section element represents a standalone section — which doesn't have 
-          a more specific semantic element to represent it — contained within an HTML document. 
-          Typically, but not always, sections have a heading."
+          "The HTML h1–h6 elements represent six levels of section headings. 
+          h1 is the highest section level and h6 is the lowest."
         </blockquote>
 
         <!-- =============================================================
@@ -90,11 +89,11 @@
         <section>
           <h3>Semantic Considerations</h3>
           <p>
-            The section element is flexible, and can be used to start any kind of new information. 
-            Usually the section element is used to section off any new information in the HTML, 
-            whether this be a new section following the same format, or a new section in a different 
-            format. Headings are also normally used at the beginning of sections to specify the start 
-            of a new section.
+            Headings are the primary way to mark different sections of content. Headings 
+            can help guide the user to a specific section they want to view, making it easier 
+            to search through the web page. There are six differnt types of headings, h1-h6. 
+            The higher the number, the less prominent the heading, so the first heading on a 
+            page is usually h1.
           </p>
         </section>
 
@@ -107,7 +106,7 @@
         <section>
           <h3>Common Attributes and Values</h3>
           <p>
-            The section element only includes the global attributes.
+            All heading elements only include the global attributes.
           </p>
         </section>
 
@@ -122,31 +121,14 @@
         <section>
           <h3>Accessibility Considerations</h3>
           <p>
-            The section element has the Implicit ARIA role of region, but only if the element 
-            has an accessible name. Otherwise, there would be no corresponding role. 
+            All heading elements have the Implicit ARIA role of 'heading'.
           </p>
           <p>
-            The section element has the following Permitted ARIA roles:
+            All heading elements have the following Permitted ARIA roles;
             <ul>
-              <li>alert</li>
-              <li>alertdialog</li>
-              <li>application</li>
-              <li>banner</li>
-              <li>complementary</li>
-              <li>contentinfo</li>
-              <li>dialog</li>
-              <li>document</li>
-              <li>feed</li>
-              <li>log</li>
-              <li>main</li>
-              <li>marquee</li>
-              <li>navigation</li>
-              <li>none</li>
-              <li>note</li>
+              <li>tab</li>
               <li>presentation</li>
-              <li>search</li>
-              <li>status</li>
-              <li>tabpanel</li>
+              <li>none</li>
             </ul>
           </p>
         </section>
@@ -161,26 +143,17 @@
         <section>
           <h3>Example Uses</h3>
           <p>
-            Creating two different sections within the main element, 
-            having them describe different ideas.
+            Add a Heading 1 to the page.
           </p>
           <!-- Pay attention to how pre elements observe all whitespace -->
-          <pre><section>
-<h4>The First Task</h4>
-<p>The first task that must be completed</p></section>
-<section><h4>The Second Task</h4>
-<p>The second task that must be completed</p></section>
+          <pre><h1>Here is the first Heading</h1>
           </pre>
           <p>
-            Creating two different sections within the footer element, 
-            having them contain different links.
+            Add a Heading 1 and Heading 2 to the page.
           </p>
           <!-- Pay attention to how pre elements observe all whitespace -->
-          <pre><footer><section>
-<h4>Social Media Links</h4>
-<p>Linked Link</p></section>
-<section><h4>Resources Links</h4>
-<p>Mozilla Developer Network Link</p></section></footer>
+          <pre><h1>Here is the First Heading</h1>
+<h2>Here is the Second Heading</h2>
           </pre>
         </section>
 
@@ -191,10 +164,10 @@
           ============================================================ -->
         <footer role="contentinfo">
           <ul>
-            <li><a href='https://www.linkedin.com/learning/html-essential-training-4/structuring-content?u=57888345'>
-              Jen Simmons on Structuring Content via LinkedIn Learning</a></li>
-            <li><a href='https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section'>
-              section: The Generic Section element via Mozilla Developer Network</a></li>
+            <li><a href='https://www.internetingishard.com/html-and-css/basic-web-pages/#headings'>
+              Basic Web Pages Tutorial | HTML & CSS Is Hard</a></li>
+            <li><a href='https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements'>
+              h1–h6: The HTML Section Heading elements via Mozilla Developer Network</a></li>
           </ul>
         </footer>
       </article>
