@@ -75,7 +75,9 @@
           <h2>Heading that frames the crux of the element</h2>
         </header>
         <!-- Enter definition from MDN in the blockquote element below -->
-        <blockquote id="definition">
+        <blockquote id="The HTML <nav> element represents a section of a page whose purpose is to provide 
+          navigation links, either within the current document or to other documents. 
+          Common examples of navigation sections are menus, tables of contents, and indexes.">
           
         </blockquote>
 
@@ -86,7 +88,13 @@
           ============================================================ -->
         <section>
           <h3>Semantic Considerations</h3>
-          
+          <p>
+            This element is expected to be used to signify when navigation items will be listed.
+            Content that is normally wrapped up by the nav element are lists. 
+            Not all navigation items need to be contained by the nav element, the footer element often includes links,
+            but for significant blocks of links it should be.
+            List applications include menus, indexes, categories, external links, tables of contents, and more.
+          </p>
         </section>
 
         <!-- =============================================================
@@ -97,6 +105,11 @@
           ============================================================ -->
         <section>
           <h3>Common Attributes and Values</h3>
+          <p>
+            Only global attributes apply to the nav element. 
+            Global attributes are shared by all html elements.
+            The a element, or anchor element, is used to link URL addresses. 
+          </p>
         </section>
 
         <!-- =============================================================
@@ -109,6 +122,13 @@
           ============================================================ -->
         <section>
           <h3>Accessibility Considerations</h3>
+          <p>
+            To improve accessibility to the nav element, aria-labelledby can be use.
+            According to the MDN website, the aria-labelledby attribute 
+            "establishes relationships between objects and their label(s), 
+            and its value should be one or more element IDs, 
+            which refer to elements that have the text needed for labeling"
+          </p>
         </section>
 
         <!-- =============================================================
