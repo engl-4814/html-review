@@ -107,6 +107,7 @@
           The div element includes global elements.
           Global elements are ones that apply to all HTML elements.
           This applies to non-standard elements as well. 
+          The &lt;div&gt; element is used when other semantic elements are not. 
         </p>
 
         <!-- =============================================================
@@ -120,6 +121,13 @@
         <section>
           <h3>Accessibility Considerations</h3>
         </section>
+        <p>
+          The &lt;div&gt; element is commonly seen in accessibility through the 
+          &lt;button&gt;. To a screen reader, this element will appear as a button
+          control. Through aria, this can create toggle buttons. A button is a widget 
+          used to perform various commands on a page. The "Enter" and "Space" keys
+          on the keyboard may activate the button. 
+        </p>
 
         <!-- =============================================================
           EXAMPLES
@@ -131,7 +139,25 @@
         <section>
           <h3>Example Uses</h3>
           <p>
-            [introduce example]
+            The HTML article &lt;div&gt;
+          </p>
+          <p>
+            Simple example as provided by MDN:
+            <div>
+              <p>
+                very interesting content such as &lt;p&gt; 
+              </p>
+            </div>
+          </p>
+          <p>
+            Styled example as provided by MDN
+            <div class="shadowbox">
+              <p>
+                secret love letter displayed in shawdowed box,
+                but to make it work you have to know CSS, so 
+                that is for another day. 
+              </p>
+            </div>
           </p>
           <!-- Pay attention to how pre elements observe all whitespace -->
           <pre>Here is the first line
@@ -146,6 +172,11 @@ Here is the second with no spaces
               unordered list with links and meaningful labels. 
           ============================================================ -->
         <footer role="contentinfo">
+          <ul>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div</a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes</a></a>li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/button_role</a></li>
+          </ul>
         </footer>
       </article>
     </main>
