@@ -7,13 +7,13 @@
   <head>
 
     <!-- Meta Tags -->
-    <title>Lists</title>
+    <title>Header element</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- a viewport declaration which does not disable zooming -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Enter a brief description." />
-    <meta name="author" content="Enter your name here" />
+    <meta name="author" content="Andrews & Chan" />
 
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="../assets/css/base.css" />
@@ -21,9 +21,9 @@
   <body>
     <nav>
       <header role="banner">
-        <h1>HTML Review Resources: <code>&lt;li&gt;</code></h1>
+        <h1>HTML Review Resources: <code>&lt;Header&gt;</code></h1>
         <p>
-          Informative byline here.
+          The <strong>header</strong> element is used primarily to make banners for webpages (this part is the header!)
         </p>
       </header>
       <!-- nav elements go within a semantic nav element -->
@@ -72,11 +72,11 @@
         ============================================================ -->
       <article>
         <header>
-          <h2>Listing Things</h2>
+          <h2>MDN definition of the element</h2>
         </header>
         <!-- Enter definition from MDN in the blockquote element below -->
         <blockquote id="definition">
-            The HTML <code>&lt;li&gt;</code> element is used to represent an item in a list. It must be contained in a parent element: an ordered list (<code>&lt;ol&gt;</code>), an unordered list (<code>&lt;ul&gt;</code>), or a menu (<code>&lt;menu&gt;</code>). In menus and unordered lists, list items are usually displayed using bullet points. In ordered lists, they are usually displayed with an ascending counter on the left, such as a number or letter.
+            The HTML header element represents introductory content, typically a group of introductory or navigational aids. It may contain some heading elements but also a logo, a search form, an author name, and other elements.
         </blockquote>
 
         <!-- =============================================================
@@ -86,8 +86,11 @@
           ============================================================ -->
         <section>
           <h3>Semantic Considerations</h3>
-          <p>The <code>&lt;li&gt;</code> element is expected to show list items within a list. These items can be numbered, bulleted, or be displayed as menu items.</p>
-          <p>Content that is usually wrapped by the <code>&lt;li&gt;</code> element are items in a list.</p>
+          <ul>
+              <li>The <strong>header</strong> element cannot be used inside of elements such as <strong>footer</strong> or inside of another <strong>header</strong> element</li>
+              <li>You can place images, web addresses, or links as/in your header</li>
+          </ul>
+          
         </section>
 
         <!-- =============================================================
@@ -99,7 +102,8 @@
         <section>
           <h3>Common Attributes and Values</h3>
           <ul>
-            <li>The "value" attribute can be attached to <code>&lt;ol&gt;</code> to designate what number the list starts on</li>
+              <li>The only attributes used by <strong>header</strong> are global attributes</li>
+              <li>Examples of global attributes: language, class, name, roll, list, etc.</li>
           </ul>
         </section>
 
@@ -113,15 +117,9 @@
           ============================================================ -->
         <section>
           <h3>Accessibility Considerations</h3>
-          <p>
-            <ul>
-              <li>Many lists are directories to other pages or various places in the same page and there is a role called "button" which denotes a link to that can be activated.</li>
-              <li>The "checkbox" role could be used with lists especially in surveys.</li>
-              <li>A "listbox" role may denote a large number of options in a survey as opposed to individual "checkbox" roles</li>
-              <li>Many times a list is a menu on a page that allows people to go places on the page or other pages that can be denoted with the "menu" role</li>
-              <li>A "form" role may be good for denoting a section of a website</li>
-            </ul>
-          </p>
+          <ul>
+              <li>Screen readers will not read <strong>header</strong> as a header if semantic considerations are not followed</li>
+          </ul>
         </section>
 
         <!-- =============================================================
@@ -134,17 +132,22 @@
         <section>
           <h3>Example Uses</h3>
           <p>
-            Create a Navigation Bar
+              <ul>
+                <li>
+            <header class="page-header">
+                <h1>This is a header!</h1>
+            </header>
+                </li>
+                <li>
+                    &lt;header class="page-header"&gt;
+                    &lt;h1&gt; This is a header &lt;/h1&gt;
+                </li>
+            </ul>
           </p>
           <!-- Pay attention to how pre elements observe all whitespace -->
-          <pre>A list, ordered or unordered, is a good way to create a navigation bar on a website.
-            Navigation lists are connected to links that direct to other sections in the page.
-          </pre>
-          <p>
-            External Links and Social Media
-          </p>
-          <pre>Using unordered lists for this is a good way to create a defined section for these.
-            These lists are connected with links and maybe buttons that connect to other pages
+          <pre>Here is the first line
+Here is the second with no spaces
+  Here is the third with 2 spaces added to it.
           </pre>
         </section>
 
@@ -154,16 +157,13 @@
               unordered list with links and meaningful labels. 
           ============================================================ -->
         <footer role="contentinfo">
-<<<<<<< Updated upstream
-            <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li">MDN Web Docs definition for list element</a></p>
-=======
-          <ol>
-            <li>https://www.w3.org/TR/wai-aria-practices/</li>
-            <li>https://www.tutorialrepublic.com/html-tutorial/html-attributes.php#:~:text=Attributes%20define%20additional%20characteristics%20or,be%20enclosed%20in%20quotation%20marks.</li>
-            <li>https://www.w3schools.com/tags/tag_li.asp</li>
-            <li></li>
-          </ol>
->>>>>>> Stashed changes
+            <section>
+                <h3>Sources and Resources</h3>
+                <ul>
+                    <li>https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header</li>
+                    <li>https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes</li>
+                </ul>
+            </section>
         </footer>
       </article>
     </main>
