@@ -7,12 +7,12 @@
   <head>
 
     <!-- Meta Tags -->
-    <title>Amy and Tyler's Website</title>
+    <title>Span Element</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- a viewport declaration which does not disable zooming -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="A simple website that does not contain much content." />
+    <meta name="description" content="Span Element." />
     <meta name="author" content="Amy and Tyler" />
 
     <!-- CSS -->
@@ -21,9 +21,9 @@
   <body>
     <nav>
       <header role="banner">
-        <h1>HTML Review Resources: <code>&lt;elementname&gt;</code></h1>
+        <h1>HTML Review Resources: <code>&lt;Span&gt;</code></h1>
         <p>
-          A website to practice html built by Amy and Tyler.
+        A page that tells about the &lt;span&gt; element.
         </p>
       </header>
       <!-- nav elements go within a semantic nav element -->
@@ -75,10 +75,8 @@
           <h2>MDN Definitions</h2>
         </header>
         <!-- Enter definition from MDN in the blockquote element below -->
-        <blockquote id="The HTML <nav> element represents a section of a page whose purpose is to provide 
-          navigation links, either within the current document or to other documents. 
-          Common examples of navigation sections are menus, tables of contents, and indexes.">
-          
+        <blockquote id="The HTML &lt;span&gt; element is the inline version
+          of the &lt;div&gt; element and does not represent anything."
         </blockquote>
        
         <!-- =============================================================
@@ -89,11 +87,8 @@
            <section>
           <h3>Semantic Considerations</h3>
           <p>
-            This element is expected to be used to signify when navigation items will be listed.
-            Content that is normally wrapped up by the nav element are lists. 
-            Not all navigation items need to be contained by the nav element, the footer element often includes links,
-            but for significant blocks of links it should be.
-            List applications include menus, indexes, categories, external links, tables of contents, and more.
+            The &lt;span&gt; is used for phrasing and styling content.It should 
+            be used only when no other semanticelement is being used.
           </p>
         </section>
         <!-- =============================================================
@@ -123,11 +118,9 @@
         <section>
           <h3>Accessibility Considerations</h3>
           <p>
-            To improve accessibility to the nav element, aria-labelledby can be use.
-            According to the MDN website, the aria-labelledby attribute 
-            "establishes relationships between objects and their label(s), 
-            and its value should be one or more element IDs, 
-            which refer to elements that have the text needed for labeling"
+            The &lt;span&gt; is commonly found with a link role to identify 
+            an element that creates a hyperlink to a resource. The screen reader
+            announces text of the link as well as the fact that it is a link. 
           </p>
         </section>
 
@@ -139,16 +132,17 @@
             - Reuse the <p> - <pre> combination for each example.
           ============================================================ -->
         <section>
-          <h3>Example Uses</h3>
+          <h3>Example Uses of &lt;span&gt;</h3>
           <p>
-            The HTML &lt;article&gt;
+            <span>
+              Insert any text that you could think of here.
+            </span>
           </p>
-          <p>
-            Twitter: uses &lt;article&gt; for tweets 
+          <body>
+          <p> 
+          <span style = "color:dodgerblue;"> This one is in color </span>
           </p>
-          <p>
-            Blogs: uses &lt;article&gt; for posts
-          </p>
+          </body>
           <blockquote id= "Here is the first line
           Here is the second with no spaces
             Here is the third with 2 spaces added to it.">
@@ -164,12 +158,10 @@
           ============================================================ -->
         <footer role="contentinfo">
           <ul>
-            <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav">The Navigation Section Element</a></li>
-            <li><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Navigation_Role">The Navigation Role</a></li>
-            <li><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-labelledby_attribute">Using the aria-labelledby attribute</a></li>
-            <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes">Global Attributes</a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/span</a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_link_role#aria_attributes_used</a></a>li>
+            <li><a href="https://www.tutorialspoint.com/html/html_span_tag.htm</a></li>
           </ul>
-          <li><a href=https://stackoverflow.com/questions/6817262/how-to-display-html-tags-as-plain-text</a></a>li></ul>
         </footer>
       </article>
     </main>
