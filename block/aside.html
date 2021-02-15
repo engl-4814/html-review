@@ -85,7 +85,9 @@
           ============================================================ -->
         <section>
           <h3>Semantic Considerations</h3>
-          <p>This element is a "content sectioning" element, so you should use this element to wrap around any elements you'd like in that section, much like section and article elements, except aside elements should be used to mark content that is indirectly related to the main content. Aside elements typically wrap written content, such as headings, paragraphs, and lists or embedded content, and they can be wrapped within body or footer elements as well as inside section, article, and even paragraph elements.</p>
+          <p>
+            This element is a "content sectioning" element, so you should use this element to wrap around any elements you'd like in that section, much like section and article elements, except aside elements should be used to mark content that is indirectly related to the main content. Aside elements typically wrap written content, such as headings, paragraphs, and lists or embedded content, and they can be wrapped within body or footer elements as well as inside section, article, and even paragraph elements.
+          </p>
         </section>
 
         <!-- =============================================================
@@ -100,6 +102,7 @@
               <li>aria-label attribute if there are multiple asides/complementary elements on the page to help assistive technologies</li>
               <li>Global attributes (can be used with all attributes)</li>
               <li>Event attributes (performed by users)</li>
+              <li>class attribute can be used to indicate what style properties should be attributed to the aside eement when working in a style sheet.</li>
           </ul>
         </section>
 
@@ -113,9 +116,14 @@
           ============================================================ -->
         <section>
           <h3>Accessibility Considerations</h3>
-          <p>Using the aside element should automatically communicate to assistive technology that the content is separated from the main content on the page, which takes care of the ARIA role=complementary, but you may still want to include this role.</p>
-          <p>If there's more than one complementary or aside element on the page, you should provide a descriptive label for each landmark using the aria-label attribute: aria-label=""; so that assistive technology can identify the purpose of each landmark element. </p>
-          <p>Other permitted ARIA roles include:
+          <p>
+            Using the aside element should automatically communicate to assistive technology that the content is separated from the main content on the page, which takes care of the ARIA role=complementary, but you may still want to include this role.
+          </p>
+          <p>
+            If there's more than one complementary or aside element on the page, you should provide a descriptive label for each landmark using the aria-label attribute: aria-label=""; so that assistive technology can identify the purpose of each landmark element. 
+          </p>
+          <p>
+            Other permitted ARIA roles include:
             <ul>
               <li>feed</li>
               <li>none</li>
@@ -186,11 +194,10 @@
               unordered list with links and meaningful labels. 
           ============================================================ -->
         <footer role="contentinfo">
-          <p>https://www.w3schools.com/tags/tag_aside.asp</p>
-          <p>https://html.com/tags/aside/</p>
-          <p>https://developer.mozilla.org/en-US/docs/Web/HTML/Element/aside</p>
-          <p>https://www.a11ymatters.com/article/intro-html5-sectioning-elements/</p>
-          <p>https://developer.mozilla.org/en-US/docs/Web/HTML/Element/aside</p>
+          <p><a href="https://www.w3schools.com/tags/tag_aside.asp">HTML aside Tag</a> by World Wide Web Consortium on w3schools.</p>
+          <p><a href="https://html.com/tags/aside/">HTML5 Aside Element: Here Are The Good (And Not So Good) Uses For It</a> by Adam Wood on HTML.com</p>
+          <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/aside">The Aside ELement</a> by MDN contributors on 10 February 2020.</p>
+          <p><a href="https://www.a11ymatters.com/article/intro-html5-sectioning-elements/">Introduction to HTML5 Elements</a> by Ahmad Shadeed on a11ymatters. 18 September 2016.</p>
           <p><a href="https://aastudio.fr/Sidebar-and-Aside-are-different.html">Sidebar and Aside are Different!</a> by Aurelien Aries on aastudio. 2 September 2013.</p>
           <p><a href="https://www.educba.com/html-event-attributes/">HTML Event Attributes</a> by Educba.</p>
           <p><a href="https://www.w3schools.com/tags/ref_standardattributes.asp">HTML Global Attributes</a> by World Wide Web Consortium on w3schools.</p>
