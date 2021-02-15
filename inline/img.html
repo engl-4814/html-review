@@ -86,6 +86,14 @@
           ============================================================ -->
         <section>
           <h3>Semantic Considerations</h3>
+          <ul>
+            <li>
+              Be mindful of different power devices, an image with too many pixels may not load on all devices
+            </li>
+            <li>
+              Be mindful of the size of the image, too large an image may take too long to load
+            </li>
+          </ul>
           
         </section>
 
@@ -132,11 +140,22 @@
         <section>
           <h3>Example Uses</h3>
           <p>
+            <ul>
+              <li>
             <img src="https://developer.mozilla.org/static/img/favicon144.png"
                   alt="MDN Logo">
+                  </li>
+              <li>
             <img src="https://upload.wikimedia.org/wikipedia/commons/b/bb/Baby_Turtle.jpg"
                   alt="A Baby Turtle"
-                  sizes="(max-width: 600px) 200px, 50vw">
+                  width="200" height="100">
+                  </li>
+              <li>
+                &lt;img src="https://upload.wikimedia.org/wikipedia/commons/b/bb/Baby_Turtle.jpg"
+                  alt="A Baby Turtle"
+                  width="200" height="100"&gt;
+              </li>
+                  </ul>
           </p>
           <!-- Pay attention to how pre elements observe all whitespace -->
           <pre>Here is the first line

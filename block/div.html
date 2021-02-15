@@ -7,13 +7,13 @@
   <head>
 
     <!-- Meta Tags -->
-    <title>Main Page</title>
+    <title>Div Element</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- a viewport declaration which does not disable zooming -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Information on main tags" />
-    <meta name="author" content="Alyssa and Katie"/>
+    <meta name="description" content="This website is about the div block element." />
+    <meta name="author" content="Tyler and Amy" />
 
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="../assets/css/base.css" />
@@ -21,9 +21,9 @@
   <body>
     <nav>
       <header role="banner">
-        <h1>HTML Review Resources: <code>&lt;Main&gt;</code></h1>
+        <h1>HTML Review Resources: <code>&lt;elementname&gt;</code></h1>
         <p>
-          The main element designates where the primary content of your web page goes, i.e. the purpose of your web page.
+          Div is a block element.
         </p>
       </header>
       <!-- nav elements go within a semantic nav element -->
@@ -72,11 +72,12 @@
         ============================================================ -->
       <article>
         <header>
-          <h2>The Purpose of Your Webpage</h2>
+          <h2>MDN Definitions</h2>
         </header>
         <!-- Enter definition from MDN in the blockquote element below -->
-        <blockquote id="definition">
-          The HTML [main] element represents the dominant content of the body of a document. The main content area consists of content that is directly related to or expands upon the central topic of a document, or the central functionality of an application.
+        <blockquote id="The HTML <div> element is the generic container for flow content. It has no effect on the
+          the content or layout until styled in some way using CSS.">
+          
         </blockquote>
 
         <!-- =============================================================
@@ -87,8 +88,10 @@
         <section>
           <h3>Semantic Considerations</h3>
           <p>
-            Main is where the primary content (the purpose) of the web page goes. Artical, heading, and paragraph tags are typically wrapped in the main tags.
+            The &lt;div&gt; element is used to group content. 
+            It is styled using class, id, lang, or other attributes. 
           </p>
+          
         </section>
 
         <!-- =============================================================
@@ -99,11 +102,13 @@
           ============================================================ -->
         <section>
           <h3>Common Attributes and Values</h3>
-          <ul>
-            <li>global attributes, which can be used with all attributes</li>
-            <li>role attribute, specifically, is important for accessibility</li>
-          </ul>
         </section>
+        <p>
+          The div element includes global elements.
+          Global elements are ones that apply to all HTML elements.
+          This applies to non-standard elements as well. 
+          The &lt;div&gt; element is used when other semantic elements are not. 
+        </p>
 
         <!-- =============================================================
           A11Y
@@ -115,16 +120,14 @@
           ============================================================ -->
         <section>
           <h3>Accessibility Considerations</h3>
-          <p>
-            Main is typically assigned a landmark role. Only one element can be assigned the main landmark role.
-          </p>
-          <ul>
-             <li>role (attribute)</li>
-             <li>"main" (value)</li>
-             <li>role="main" (element)</li>
-             <li role="main">Main</li>
-          </ul>
         </section>
+        <p>
+          The &lt;div&gt; element is commonly seen in accessibility through the 
+          &lt;button&gt;. To a screen reader, this element will appear as a button
+          control. Through aria, this can create toggle buttons. A button is a widget 
+          used to perform various commands on a page. The "Enter" and "Space" keys
+          on the keyboard may activate the button. 
+        </p>
 
         <!-- =============================================================
           EXAMPLES
@@ -136,21 +139,30 @@
         <section>
           <h3>Example Uses</h3>
           <p>
-            Main doesn't contribute to the DOM's structure; it's purely informational.
+            The HTML article &lt;div&gt;
           </p>
           <p>
-            Main should wrap content that is unique to the page, not repeated across a set of documents.
+            Simple example as provided by MDN:
+            <div>
+              <p>
+                very interesting content such as &lt;p&gt; 
+              </p>
+            </div>
           </p>
           <p>
-            Main goes in the body section and can wrap headings, paragraphs, and articles.
+            Styled example as provided by MDN
+            <div class="shadowbox">
+              <p>
+                secret love letter displayed in shawdowed box,
+                but to make it work you have to know CSS, so 
+                that is for another day. 
+              </p>
+            </div>
           </p>
           <!-- Pay attention to how pre elements observe all whitespace -->
-          <pre>&lt;Main&gt; 
-            &lt;h2&gt;Topic 1 of main section&lt;/h2&gt; 
-            &lt;p&gt;paragraph content&lt;/p&gt; 
-            &lt;h2&gt;Another topic in main&lt;/h2&gt; 
-            &lt;p&gt;more content&lt;/p&gt; 
-    &lt;/Main&gt; 
+          <pre>Here is the first line
+Here is the second with no spaces
+  Here is the third with 2 spaces added to it.
           </pre>
         </section>
 
@@ -161,12 +173,9 @@
           ============================================================ -->
         <footer role="contentinfo">
           <ul>
-              <li><a href="https://www.w3.org/TR/wai-aria-1.1/#Properties">Accessible Rich Internet Applications</a> by World Wide Web Consortium. 14 December 2017.</li>
-              <li><a href="https://www.youtube.com/watch?v=IhWMou12_Vk">How ARIA landmark roles help screen reader users</a> by Nomensa on YouTube. 29 June 2011.</li>
-              <li><a href="https://www.nomensa.com/blog/2010/what-are-wai-aria-document-landmark-roles">What are WAI-ARIA Document Landmark Roles</a>by Leonie Watson on Nomensa. 23 February 2010.</li>
-              <li><a href="https://www.washington.edu/accessibility/web/landmarks/">ARIA Landmark Roles</a> by University of Washington.</li>
-              <li><a href="https://www.w3schools.com/tags/tag_main.asp">HTML &lt;MAIN&gt; Tag</a> by World Wide Web Consortium on w3schools. </li>
-              <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/main">&lt;main&gt;</a> by Mozilla Developer Network. 18 December 2020.</li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div</a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes</a></a>li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/button_role</a></li>
           </ul>
         </footer>
       </article>

@@ -7,13 +7,13 @@
   <head>
 
     <!-- Meta Tags -->
-    <title>Main Page</title>
+    <title>Section Element</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- a viewport declaration which does not disable zooming -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Information on main tags" />
-    <meta name="author" content="Alyssa and Katie"/>
+    <meta name="description" content="Dividing the web page into different sections" />
+    <meta name="author" content="Logan Vance and Kate Stafford" />
 
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="../assets/css/base.css" />
@@ -21,9 +21,9 @@
   <body>
     <nav>
       <header role="banner">
-        <h1>HTML Review Resources: <code>&lt;Main&gt;</code></h1>
+        <h1>HTML Review Resources: <code>&lt;Section&gt;</code></h1>
         <p>
-          The main element designates where the primary content of your web page goes, i.e. the purpose of your web page.
+          The section element wraps around a standalone section in the HTML document.
         </p>
       </header>
       <!-- nav elements go within a semantic nav element -->
@@ -72,11 +72,14 @@
         ============================================================ -->
       <article>
         <header>
-          <h2>The Purpose of Your Webpage</h2>
+          <h2>Creating a Standalone Section</h2>
         </header>
         <!-- Enter definition from MDN in the blockquote element below -->
         <blockquote id="definition">
-          The HTML [main] element represents the dominant content of the body of a document. The main content area consists of content that is directly related to or expands upon the central topic of a document, or the central functionality of an application.
+
+          "The HTML section element represents a standalone section — which doesn't have 
+          a more specific semantic element to represent it — contained within an HTML document. 
+          Typically, but not always, sections have a heading."
         </blockquote>
 
         <!-- =============================================================
@@ -87,7 +90,11 @@
         <section>
           <h3>Semantic Considerations</h3>
           <p>
-            Main is where the primary content (the purpose) of the web page goes. Artical, heading, and paragraph tags are typically wrapped in the main tags.
+            The section element is flexible, and can be used to start any kind of new information. 
+            Usually the section element is used to section off any new information in the HTML, 
+            whether this be a new section following the same format, or a new section in a different 
+            format. Headings are also normally used at the beginning of sections to specify the start 
+            of a new section.
           </p>
         </section>
 
@@ -99,10 +106,9 @@
           ============================================================ -->
         <section>
           <h3>Common Attributes and Values</h3>
-          <ul>
-            <li>global attributes, which can be used with all attributes</li>
-            <li>role attribute, specifically, is important for accessibility</li>
-          </ul>
+          <p>
+            The section element only includes the global attributes.
+          </p>
         </section>
 
         <!-- =============================================================
@@ -116,14 +122,33 @@
         <section>
           <h3>Accessibility Considerations</h3>
           <p>
-            Main is typically assigned a landmark role. Only one element can be assigned the main landmark role.
+            The section element has the Implicit ARIA role of region, but only if the element 
+            has an accessible name. Otherwise, there would be no corresponding role. 
           </p>
-          <ul>
-             <li>role (attribute)</li>
-             <li>"main" (value)</li>
-             <li>role="main" (element)</li>
-             <li role="main">Main</li>
-          </ul>
+          <p>
+            The section element has the following Permitted ARIA roles:
+            <ul>
+              <li>alert</li>
+              <li>alertdialog</li>
+              <li>application</li>
+              <li>banner</li>
+              <li>complementary</li>
+              <li>contentinfo</li>
+              <li>dialog</li>
+              <li>document</li>
+              <li>feed</li>
+              <li>log</li>
+              <li>main</li>
+              <li>marquee</li>
+              <li>navigation</li>
+              <li>none</li>
+              <li>note</li>
+              <li>presentation</li>
+              <li>search</li>
+              <li>status</li>
+              <li>tabpanel</li>
+            </ul>
+          </p>
         </section>
 
         <!-- =============================================================
@@ -136,21 +161,32 @@
         <section>
           <h3>Example Uses</h3>
           <p>
-            Main doesn't contribute to the DOM's structure; it's purely informational.
-          </p>
-          <p>
-            Main should wrap content that is unique to the page, not repeated across a set of documents.
-          </p>
-          <p>
-            Main goes in the body section and can wrap headings, paragraphs, and articles.
+            Creating two different sections within the main element, 
+            having them describe different ideas.
           </p>
           <!-- Pay attention to how pre elements observe all whitespace -->
-          <pre>&lt;Main&gt; 
-            &lt;h2&gt;Topic 1 of main section&lt;/h2&gt; 
-            &lt;p&gt;paragraph content&lt;/p&gt; 
-            &lt;h2&gt;Another topic in main&lt;/h2&gt; 
-            &lt;p&gt;more content&lt;/p&gt; 
-    &lt;/Main&gt; 
+          <pre>&lt;section&gt;
+        &lt;h4&gt;The First Task&lt;/h4&gt;
+        &lt;p&gt;The first task that must be completed&lt;/p&gt;
+&lt;/section&gt;
+&lt;section&gt;
+        &lt;h4&gt;The Second Task&lt;/h4&gt;
+        &lt;p&gt;The second task that must be completed&lt;/p&gt;
+&lt;/section&gt;
+          </pre>
+          <p>
+            Creating two different sections within the footer element, 
+            having them contain different links.
+          </p>
+          <!-- Pay attention to how pre elements observe all whitespace -->
+          <pre><footer>&lt;section&gt;
+            &lt;h4&gt;Social Media Links&lt;/h4&gt;
+            &lt;p&gt;Linked Link&lt;/p&gt;
+&lt;/section&gt;
+&lt;section&gt;
+            &lt;h4&gt;Resources Links&lt;/h4&gt;
+            &lt;p&gt;Mozilla Developer Network Link&lt;/p&gt;
+&lt;/section&gt;</footer>
           </pre>
         </section>
 
@@ -161,12 +197,10 @@
           ============================================================ -->
         <footer role="contentinfo">
           <ul>
-              <li><a href="https://www.w3.org/TR/wai-aria-1.1/#Properties">Accessible Rich Internet Applications</a> by World Wide Web Consortium. 14 December 2017.</li>
-              <li><a href="https://www.youtube.com/watch?v=IhWMou12_Vk">How ARIA landmark roles help screen reader users</a> by Nomensa on YouTube. 29 June 2011.</li>
-              <li><a href="https://www.nomensa.com/blog/2010/what-are-wai-aria-document-landmark-roles">What are WAI-ARIA Document Landmark Roles</a>by Leonie Watson on Nomensa. 23 February 2010.</li>
-              <li><a href="https://www.washington.edu/accessibility/web/landmarks/">ARIA Landmark Roles</a> by University of Washington.</li>
-              <li><a href="https://www.w3schools.com/tags/tag_main.asp">HTML &lt;MAIN&gt; Tag</a> by World Wide Web Consortium on w3schools. </li>
-              <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/main">&lt;main&gt;</a> by Mozilla Developer Network. 18 December 2020.</li>
+            <li><a href='https://www.linkedin.com/learning/html-essential-training-4/structuring-content?u=57888345'>
+              Jen Simmons on Structuring Content via LinkedIn Learning</a></li>
+            <li><a href='https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section'>
+              section: The Generic Section element via Mozilla Developer Network</a></li>
           </ul>
         </footer>
       </article>

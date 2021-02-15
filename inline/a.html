@@ -7,13 +7,13 @@
   <head>
 
     <!-- Meta Tags -->
-    <title>Main Page</title>
+    <title> a page</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- a viewport declaration which does not disable zooming -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Information on main tags" />
-    <meta name="author" content="Alyssa and Katie"/>
+    <meta name="description" content="Enter a brief description." />
+    <meta name="author" content="Enter your name here" />
 
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="../assets/css/base.css" />
@@ -21,9 +21,9 @@
   <body>
     <nav>
       <header role="banner">
-        <h1>HTML Review Resources: <code>&lt;Main&gt;</code></h1>
+        <h1>HTML Review Resources: <code>&lt;a&gt;</code></h1>
         <p>
-          The main element designates where the primary content of your web page goes, i.e. the purpose of your web page.
+          The <code>&lt;a&gt;</code> tag defines a hyperlink, which is used to link from one page to another.
         </p>
       </header>
       <!-- nav elements go within a semantic nav element -->
@@ -72,11 +72,11 @@
         ============================================================ -->
       <article>
         <header>
-          <h2>The Purpose of Your Webpage</h2>
+          <h2> The hyperlinking anchor </h2>
         </header>
         <!-- Enter definition from MDN in the blockquote element below -->
         <blockquote id="definition">
-          The HTML [main] element represents the dominant content of the body of a document. The main content area consists of content that is directly related to or expands upon the central topic of a document, or the central functionality of an application.
+          The HTML <code>&lt;a&gt;</code> element (or anchor element), with its href attribute, creates a hyperlink to  <br>web pages, files, email addresses, locations in the same page, or anything else a URL can address<br>
         </blockquote>
 
         <!-- =============================================================
@@ -87,7 +87,7 @@
         <section>
           <h3>Semantic Considerations</h3>
           <p>
-            Main is where the primary content (the purpose) of the web page goes. Artical, heading, and paragraph tags are typically wrapped in the main tags.
+            Content within each <code>&lt;a&gt;</code> should indicate a link's destination and preferably it's relation to the current HTML page.
           </p>
         </section>
 
@@ -100,11 +100,17 @@
         <section>
           <h3>Common Attributes and Values</h3>
           <ul>
-            <li>global attributes, which can be used with all attributes</li>
-            <li>role attribute, specifically, is important for accessibility</li>
-          </ul>
-        </section>
-
+            <li><code>&lt;href&gt;</code></li>
+            <li><code>&lt;download&gt;</code></li>
+            <li><code>&lt;hreflang&gt;</code></li>
+            <li><code>&lt;media&gt;</code></li>
+            <li><code>&lt;ping&gt;</code></li>
+            <li><code>&lt;referrerpolicy&gt;</code></li>
+            <li><code>&lt;rel&gt;</code></li>
+            <li><code>&lt;target&gt;</code></li>
+            <li><code>&lt;type&gt;</code></li>            
+           </ul>      
+          </section>
         <!-- =============================================================
           A11Y
             - What a11y practices are noteworthy?
@@ -115,15 +121,10 @@
           ============================================================ -->
         <section>
           <h3>Accessibility Considerations</h3>
-          <p>
-            Main is typically assigned a landmark role. Only one element can be assigned the main landmark role.
-          </p>
           <ul>
-             <li>role (attribute)</li>
-             <li>"main" (value)</li>
-             <li>role="main" (element)</li>
-             <li role="main">Main</li>
-          </ul>
+            <li>Anchor elements with <code>&lt;href&gt;</code> should not be set to void or # to prevent conveying incorrect semantics to screen readers</li>
+            <li>Links that open in a new tab/window via <code>target="_blank"</code>, or links that point to a download file should indicate what will happen when the link is followed to assist screen readers and people with low visibility</li>
+          <ul>
         </section>
 
         <!-- =============================================================
@@ -136,22 +137,15 @@
         <section>
           <h3>Example Uses</h3>
           <p>
-            Main doesn't contribute to the DOM's structure; it's purely informational.
-          </p>
-          <p>
-            Main should wrap content that is unique to the page, not repeated across a set of documents.
-          </p>
-          <p>
-            Main goes in the body section and can wrap headings, paragraphs, and articles.
+            Here's an example
           </p>
           <!-- Pay attention to how pre elements observe all whitespace -->
-          <pre>&lt;Main&gt; 
-            &lt;h2&gt;Topic 1 of main section&lt;/h2&gt; 
-            &lt;p&gt;paragraph content&lt;/p&gt; 
-            &lt;h2&gt;Another topic in main&lt;/h2&gt; 
-            &lt;p&gt;more content&lt;/p&gt; 
-    &lt;/Main&gt; 
+          <p>Linking an email address
+            <pre>
+            <code>&lt;a href="mailto:hokie@example.com"&gt;</code>
+            <img src="../assets/images/anchor_example.png" alt="Code Example" width="750" height="200"/>                  
           </pre>
+          </p>
         </section>
 
         <!-- =============================================================
@@ -159,17 +153,17 @@
             - Enter linked sources and other resources within an 
               unordered list with links and meaningful labels. 
           ============================================================ -->
-        <footer role="contentinfo">
-          <ul>
-              <li><a href="https://www.w3.org/TR/wai-aria-1.1/#Properties">Accessible Rich Internet Applications</a> by World Wide Web Consortium. 14 December 2017.</li>
-              <li><a href="https://www.youtube.com/watch?v=IhWMou12_Vk">How ARIA landmark roles help screen reader users</a> by Nomensa on YouTube. 29 June 2011.</li>
-              <li><a href="https://www.nomensa.com/blog/2010/what-are-wai-aria-document-landmark-roles">What are WAI-ARIA Document Landmark Roles</a>by Leonie Watson on Nomensa. 23 February 2010.</li>
-              <li><a href="https://www.washington.edu/accessibility/web/landmarks/">ARIA Landmark Roles</a> by University of Washington.</li>
-              <li><a href="https://www.w3schools.com/tags/tag_main.asp">HTML &lt;MAIN&gt; Tag</a> by World Wide Web Consortium on w3schools. </li>
-              <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/main">&lt;main&gt;</a> by Mozilla Developer Network. 18 December 2020.</li>
-          </ul>
-        </footer>
-      </article>
+          <footer role="contentinfo">
+          <section>
+            <h3>Sources </h3>
+            <ul>
+              <li><a target="_blank" rel="help" href="https://www.w3schools.com/tags/tag_a.asp">HTML <code>&lt;a&gt;</code> tag (opens in new tab) </a></li>
+              <li><a target="_blank" rel="help" href="https://internetingishard.com/html-and-css/links-and-images">&lt;Links and Images | Interneting is Hard (opens in new tab) &gt;</a></li>
+              <li><a target="_blank" rel="help" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a"><code>&lt;a&gt;</code> : The Anchor Element (opens in new tab)<a></li>
+            </ul>
+          </section>
+          </footer>      
+         </article>
     </main>
   </body>
 </html>

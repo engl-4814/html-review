@@ -5,3 +5,10 @@ main {
   max-width: 1000px;
   margin: auto auto;
 }
+
+pre {
+  color: white;
+  background: grey;
+  padding: 20px;
+  border-radius: 10px;
+}

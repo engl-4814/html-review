@@ -21,7 +21,9 @@ Groups will create pages, based on the group assignments below.
 This assignment will help you practice reading and navigating HTML files with existing code, since you will create marked-up content within the templated sections.
 
 1. Create your pages by copying and pasting the `to-copy-only.html` file into the correct subfolder.
-2. Rename the file with the HTML element name. `nav` woule be `nav.html` within the `block` subfolder, since it is a block element.
+2. Rename the file with your assigned HTML element name. 
+   - **Block Example**: If you're in group 2 with the `nav` element, you will rename the file as `nav.html`. Then, since the `nav` element is a block element, you will place it within the `block` subfolder.
+   - **Inline Example**: If you're in group 9 with the `span` element, you will rename the file as `span.html`. Then, since the `span` element is an inline element, you will place it within the `inline` subfolder.
 3. Fill out the areas within the page, including:
    1. Titles and headings
    2. Definition
