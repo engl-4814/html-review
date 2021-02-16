@@ -7,7 +7,7 @@
   <head>
 
     <!-- Meta Tags -->
-    <title>ArticleE</title>
+    <title>Article</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- a viewport declaration which does not disable zooming -->
@@ -76,7 +76,7 @@
         </header>
         <!-- Enter definition from MDN in the blockquote element below -->
         <blockquote id="definition">
-          
+          The HTML article element represents a self-contained composition in a document, page, application, or site, which is intended to be independently distributable or reusable.
         </blockquote>
 
         <!-- =============================================================
@@ -98,7 +98,9 @@
           ============================================================ -->
         <section>
           <h3>Common Attributes and Values</h3>
-          <p>Articles are valuable because they redirect viewers to another part of the document or webpage.</p>
+          <p>
+            This element only includes the global attributes.
+          </p>
         </section>
 
         <!-- =============================================================
@@ -111,6 +113,9 @@
           ============================================================ -->
         <section>
           <h3>Accessibility Considerations</h3>
+          <p>
+            The ARIA article role is similar to the article element; however the article element should still be given the ARIA role of article, since not all assistive technologies support HTML5 yet.
+          </p>
         </section>
 
         <!-- =============================================================
@@ -123,19 +128,24 @@
         <section>
           <h3>Example Uses</h3>
           <p>
+            A given document can have multiple articles in it; for example, on a blog that shows the text of each article one after another as the reader scrolls, each post would be contained in an article element, possibly with one or more sections within.
+          </p>
+          <p>
             <ul>
-                <l>Magazine post</l>
-                <l>Newspaper article</l>
-                <l>Blog entry</l>
+                <li>Magazine Post</li>
+                <li>Newspaper Article</li>
+                <li>Blog entry</li>
             </ul>
           </p>
           <!-- Pay attention to how pre elements observe all whitespace -->
-          <pre>Here is the first line
-Here is the second with no spaces
-  Here is the third with 2 spaces added to it.
+          <pre><article><h2>Blog Post</h2></article><p>A Very Interesting Post</p><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione ipsum iure quas impedit eos distinctio nobis aspernatur necessitatibus nesciunt provident saepe, vitae voluptatum reiciendis quod, harum a. Odit, iusto minima.s</p>
+          <div><h3>Comments</h3></div><p>Meaningful Comment</p>
           </pre>
         </section>
-
+        <h3>Sources and Resources</h3>
+        <p>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article">MDN Web Docs Info on Article Element
+        </p>
         <!-- =============================================================
           SOURCES AND RESOURCES
             - Enter linked sources and other resources within an 
