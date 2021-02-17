@@ -21,7 +21,7 @@
   <body>
     <nav>
       <header role="banner">
-        <h1>HTML Review Resources: <code>&lt;Article&gt;</code></h1>
+        <h1>HTML Review Resources: <code>&lt;article&gt;</code></h1>
         <p>
          The Article element is used for self contained compositions in a document.
         </p>
@@ -72,11 +72,11 @@
         ============================================================ -->
       <article>
         <header>
-          <h2>Articles are a way to direct viewers to a separate element within the document or web page.</h2>
+          <h2><code>article</code> Overview</h2>
         </header>
         <!-- Enter definition from MDN in the blockquote element below -->
         <blockquote id="definition">
-          The HTML article element represents a self-contained composition in a document, page, application, or site, which is intended to be independently distributable or reusable.
+          The HTML <code>article</code> element represents a self-contained composition in a document, page, application, or site, which is intended to be independently distributable or reusable.
         </blockquote>
 
         <!-- =============================================================
@@ -84,11 +84,13 @@
             - How is this element expected to be used?
             - What content is usually wrapped up by this element?
           ============================================================ -->
-        <section>
+        <!-- <section>
           <h3>Semantic Considerations</h3>
-          <p>An article is a semantic element, like a header or footer, because it accurately describes the content within an element. </p>
+          <p>
+
+          </p>
           
-        </section>
+        </section> -->
 
         <!-- =============================================================
           ATTRIBUTES AND VALUES
@@ -99,7 +101,7 @@
         <section>
           <h3>Common Attributes and Values</h3>
           <p>
-            This element only includes the global attributes.
+            This element only includes the global attributes, but commonly uses the <code>id</code> and <code>class</code> attributes.
           </p>
         </section>
 
@@ -114,7 +116,7 @@
         <section>
           <h3>Accessibility Considerations</h3>
           <p>
-            The ARIA article role is similar to the article element; however the article element should still be given the ARIA role of article, since not all assistive technologies support HTML5 yet.
+            The ARIA <code>role="article"</code> can be replaced by using the <code>article</code> element. However, the article element should still be given the ARIA role of article, since not all assistive technologies support HTML5 yet.
           </p>
         </section>
 
@@ -135,23 +137,32 @@
                 <li>Magazine Post</li>
                 <li>Newspaper Article</li>
                 <li>Blog entry</li>
+                <li>Tweets</li>
             </ul>
           </p>
           <!-- Pay attention to how pre elements observe all whitespace -->
-          <pre><article><h2>Blog Post</h2></article><p>A Very Interesting Post</p><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione ipsum iure quas impedit eos distinctio nobis aspernatur necessitatibus nesciunt provident saepe, vitae voluptatum reiciendis quod, harum a. Odit, iusto minima.s</p>
-          <div><h3>Comments</h3></div><p>Meaningful Comment</p>
-          </pre>
+          <pre>&lt;article&gt;
+  &lt;h2&gt;Blog Post&lt;/h2&gt;
+  &lt;p&gt;
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione ipsum iure quas impedit eos distinctio nobis aspernatur necessitatibus nesciunt provident saepe, vitae voluptatum reiciendis quod, harum a. Odit, iusto minima.
+  &lt;/p&gt;
+&lt;/article&gt;
+&lt;div&gt;
+  &lt;h2&gt;Comments&lt;/h2&gt;
+  &lt;p&gt;Meaningful Comment&lt;/p&gt;
+&lt;/div&gt;</pre>
         </section>
-        <h3>Sources and Resources</h3>
-        <p>
-          <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article">MDN Web Docs Info on Article Element
-        </p>
+        
         <!-- =============================================================
           SOURCES AND RESOURCES
             - Enter linked sources and other resources within an 
               unordered list with links and meaningful labels. 
           ============================================================ -->
         <footer role="contentinfo">
+          <h3>Sources and Resources</h3>
+          <p>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article">MDN Web Docs Info on Article Element
+          </p>
         </footer>
       </article>
     </main>
