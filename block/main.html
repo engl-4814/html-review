@@ -7,7 +7,7 @@
   <head>
 
     <!-- Meta Tags -->
-    <title>Main Page</title>
+    <title>&lt;main&gt; Element</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- a viewport declaration which does not disable zooming -->
@@ -21,7 +21,7 @@
   <body>
     <nav>
       <header role="banner">
-        <h1>HTML Review Resources: <code>&lt;Main&gt;</code></h1>
+        <h1>HTML Review Resources: <code>&lt;main&gt;</code></h1>
         <p>
           The main element designates where the primary content of your web page goes, i.e. the purpose of your web page.
         </p>
@@ -72,11 +72,11 @@
         ============================================================ -->
       <article>
         <header>
-          <h2>The Purpose of Your Webpage</h2>
+          <h2>Overview of <code>main</code></h2>
         </header>
         <!-- Enter definition from MDN in the blockquote element below -->
         <blockquote id="definition">
-          The HTML [main] element represents the dominant content of the body of a document. The main content area consists of content that is directly related to or expands upon the central topic of a document, or the central functionality of an application.
+          The HTML <code>main</code> element represents the dominant content of the body of a document. The main content area consists of content that is directly related to or expands upon the central topic of a document, or the central functionality of an application.
         </blockquote>
 
         <!-- =============================================================
@@ -87,7 +87,7 @@
         <section>
           <h3>Semantic Considerations</h3>
           <p>
-            Main is where the primary content (the purpose) of the web page goes. Artical, heading, and paragraph tags are typically wrapped in the main tags.
+            <code>main</code> is where the primary content (the purpose) of the web page goes. Artical, heading, and paragraph tags are typically wrapped in the main tags.
           </p>
         </section>
 
@@ -116,7 +116,7 @@
         <section>
           <h3>Accessibility Considerations</h3>
           <p>
-            Main is typically assigned a landmark role. Only one element can be assigned the main landmark role.
+            <code>main</code> is typically assigned a landmark role. Only one element can be assigned the main landmark role.
           </p>
           <ul>
              <li>role (attribute)</li>
@@ -136,21 +136,21 @@
         <section>
           <h3>Example Uses</h3>
           <p>
-            Main doesn't contribute to the DOM's structure; it's purely informational.
+            <code>main</code> doesn't contribute to the DOM's structure; it's purely informational.
           </p>
           <p>
-            Main should wrap content that is unique to the page, not repeated across a set of documents.
+            <code>main</code> should wrap content that is unique to the page, not repeated across a set of documents.
           </p>
           <p>
-            Main goes in the body section and can wrap headings, paragraphs, and articles.
+            <code>main</code> goes in the body section and can wrap headings, paragraphs, and articles.
           </p>
           <!-- Pay attention to how pre elements observe all whitespace -->
-          <pre>&lt;Main&gt; 
+          <pre>&lt;main&gt; 
             &lt;h2&gt;Topic 1 of main section&lt;/h2&gt; 
-            &lt;p&gt;paragraph content&lt;/p&gt; 
-            &lt;h2&gt;Another topic in main&lt;/h2&gt; 
-            &lt;p&gt;more content&lt;/p&gt; 
-    &lt;/Main&gt; 
+            &lt;p&gt;Vital paragraph content&lt;/p&gt; 
+            &lt;h2&gt;Developing the main topic&lt;/h2&gt; 
+            &lt;p&gt;More central content&lt;/p&gt; 
+    &lt;/main&gt; 
           </pre>
         </section>
 
