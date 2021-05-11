@@ -7,13 +7,13 @@
   <head>
 
     <!-- Meta Tags -->
-    <title>Amy and Tyler's Website</title>
+    <title>Div Element</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- a viewport declaration which does not disable zooming -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="A simple website that does not contain much content." />
-    <meta name="author" content="Amy and Tyler" />
+    <meta name="description" content="This website is about the div block element." />
+    <meta name="author" content="Tyler and Amy" />
 
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="../assets/css/base.css" />
@@ -23,7 +23,7 @@
       <header role="banner">
         <h1>HTML Review Resources: <code>&lt;elementname&gt;</code></h1>
         <p>
-          A website to practice html built by Amy and Tyler.
+          Div is a block element.
         </p>
       </header>
       <!-- nav elements go within a semantic nav element -->
@@ -75,27 +75,24 @@
           <h2>MDN Definitions</h2>
         </header>
         <!-- Enter definition from MDN in the blockquote element below -->
-        <blockquote id="The HTML <nav> element represents a section of a page whose purpose is to provide 
-          navigation links, either within the current document or to other documents. 
-          Common examples of navigation sections are menus, tables of contents, and indexes.">
-          
+        <blockquote id="definition">
+          The HTML &lt;div&gt; element is the generic container for flow content. It has no effect on the
+          the content or layout until styled in some way using CSS.
         </blockquote>
-       
+
         <!-- =============================================================
           SEMANTICS
             - How is this element expected to be used?
             - What content is usually wrapped up by this element?
           ============================================================ -->
-           <section>
+        <section>
           <h3>Semantic Considerations</h3>
           <p>
-            This element is expected to be used to signify when navigation items will be listed.
-            Content that is normally wrapped up by the nav element are lists. 
-            Not all navigation items need to be contained by the nav element, the footer element often includes links,
-            but for significant blocks of links it should be.
-            List applications include menus, indexes, categories, external links, tables of contents, and more.
+            The &lt;div&gt; element is used to group content. 
+            It is styled using class, id, lang, or other attributes. 
           </p>
         </section>
+
         <!-- =============================================================
           ATTRIBUTES AND VALUES
             - What attributes and values are important to understand?
@@ -105,10 +102,11 @@
         <section>
           <h3>Common Attributes and Values</h3>
           <p>
-            Only global attributes apply to the nav element. 
-            Global attributes are shared by all html elements.
-            The a element, or anchor element, is used to link URL addresses. 
-          </p>
+            The div element includes global elements.
+            Global elements are ones that apply to all HTML elements.
+            This applies to non-standard elements as well. 
+            The &lt;div&gt; element is used when other semantic elements are not. 
+          </p>  
         </section>
 
         <!-- =============================================================
@@ -119,15 +117,14 @@
               information is important and time-sensitive," which you 
               might otherwise convey through the visual design.
           ============================================================ -->
-
         <section>
           <h3>Accessibility Considerations</h3>
           <p>
-            To improve accessibility to the nav element, aria-labelledby can be use.
-            According to the MDN website, the aria-labelledby attribute 
-            "establishes relationships between objects and their label(s), 
-            and its value should be one or more element IDs, 
-            which refer to elements that have the text needed for labeling"
+            The &lt;div&gt; element is commonly seen in accessibility through the 
+            &lt;button&gt;. To a screen reader, this element will appear as a button
+            control. Through aria, this can create toggle buttons. A button is a widget 
+            used to perform various commands on a page. The "Enter" and "Space" keys
+            on the keyboard may activate the button. 
           </p>
         </section>
 
@@ -141,22 +138,33 @@
         <section>
           <h3>Example Uses</h3>
           <p>
-            The HTML &lt;article&gt;
+            The HTML article &lt;div&gt;
           </p>
           <p>
-            Twitter: uses &lt;article&gt; for tweets 
+            Simple example as provided by MDN:
+            <div>
+              <p>
+                very interesting content such as &lt;p&gt; 
+              </p>
+            </div>
           </p>
           <p>
-            Blogs: uses &lt;article&gt; for posts
+            Styled example as provided by MDN
+            <div class="shadowbox">
+              <p>
+                secret love letter displayed in shawdowed box,
+                but to make it work you have to know CSS, so 
+                that is for another day. 
+              </p>
+            </div>
           </p>
-          <blockquote id= "Here is the first line
-          Here is the second with no spaces
-            Here is the third with 2 spaces added to it.">
-          </blockquote>
           <!-- Pay attention to how pre elements observe all whitespace -->
-          <pre>
+          <pre>Here is the first line
+Here is the second with no spaces
+  Here is the third with 2 spaces added to it.
           </pre>
         </section>
+
         <!-- =============================================================
           SOURCES AND RESOURCES
             - Enter linked sources and other resources within an 
@@ -164,12 +172,10 @@
           ============================================================ -->
         <footer role="contentinfo">
           <ul>
-            <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav">The Navigation Section Element</a></li>
-            <li><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/Navigation_Role">The Navigation Role</a></li>
-            <li><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-labelledby_attribute">Using the aria-labelledby attribute</a></li>
-            <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes">Global Attributes</a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div">div: The Content Division Element</a>Last modified: Dec 18, 2020, by MDN contributors</li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes">Global attributes</a>Last modified: Feb 10, 2021, by MDN contributors</li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/button_role">ARIA: button role</a>Last modified: Jan 24, 2021, by MDN contributors</li>
           </ul>
-          <li><a href=https://stackoverflow.com/questions/6817262/how-to-display-html-tags-as-plain-text</a></a>li></ul>
         </footer>
       </article>
     </main>

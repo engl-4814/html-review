@@ -7,7 +7,7 @@
   <head>
 
     <!-- Meta Tags -->
-    <title>TITLE GOES HERE</title>
+    <title>&lt;img&gt; Element</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- a viewport declaration which does not disable zooming -->
@@ -76,16 +76,25 @@
         </header>
         <!-- Enter definition from MDN in the blockquote element below -->
         <blockquote id="definition">
-          The img element is the main way html imbeds images into webpages!
+          The HTML &lt;img&gt; element embeds an image into the document.
+          <span>—<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img">MDN.org</a></span>
         </blockquote>
 
         <!-- =============================================================
-          SEMANTICS
+          USE
             - How is this element expected to be used?
             - What content is usually wrapped up by this element?
           ============================================================ -->
         <section>
-          <h3>Semantic Considerations</h3>
+          <h3>Use Considerations</h3>
+          <ul>
+            <li>
+              Be mindful of different power devices, an image with too many pixels may not load on all devices
+            </li>
+            <li>
+              Be mindful of the size of the image, too large an image may take too long to load
+            </li>
+          </ul>
           
         </section>
 
@@ -98,11 +107,10 @@
         <section>
           <h3>Common Attributes and Values</h3>
           <ul>
-            <li><strong>src</strong></li>
-            <li><strong>alt</strong></li>
-            <li><strong>Referrer</strong> and <strong>crossorigin</strong></li>
-            <li><strong>Width</strong> and <strong>height</strong></li>
-            <li><strong>Sizes</strong> and <strong>srcset</strong></li>
+            <li><code>src</code></li>
+            <li><code>alt</code></li>
+            <li><code>width</code> and <code>height</code></li>
+            <li><code>sizes</code> and <code>srcset</code></li>
           </ul>
         </section>
 
@@ -131,29 +139,14 @@
           ============================================================ -->
         <section>
           <h3>Example Uses</h3>
-          <p>
-            <ul>
-              <li>
-            <img src="https://developer.mozilla.org/static/img/favicon144.png"
-                  alt="MDN Logo">
-                  </li>
-              <li>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/b/bb/Baby_Turtle.jpg"
-                  alt="A Baby Turtle"
-                  width="200" height="100">
-                  </li>
-              <li>
-                &lt;img src="https://upload.wikimedia.org/wikipedia/commons/b/bb/Baby_Turtle.jpg"
-                  alt="A Baby Turtle"
-                  width="200" height="100"&gt;
-              </li>
-                  </ul>
-          </p>
-          <!-- Pay attention to how pre elements observe all whitespace -->
-          <pre>Here is the first line
-Here is the second with no spaces
-  Here is the third with 2 spaces added to it.
-          </pre>
+
+          <h4>Image with absolute path</h4>
+          <pre>&lt;img src="https://developer.mozilla.org/static/img/favicon144.png"
+     alt="MDN Logo" /&gt;</pre>
+
+          <h4>Image with relative path</h4>
+          <pre>&lt;img src="assets/images/favicon144.png"
+     alt="MDN Logo" /&gt;</pre>
         </section>
 
         <!-- =============================================================

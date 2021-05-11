@@ -7,13 +7,13 @@
   <head>
 
     <!-- Meta Tags -->
-    <title>Nav Page</title>
+    <title>Span Element</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- a viewport declaration which does not disable zooming -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Enter a brief description." />
-    <meta name="author" content="Enter your name here" />
+    <meta name="description" content="Span Element." />
+    <meta name="author" content="Tyler and Amy" />
 
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="../assets/css/base.css" />
@@ -21,9 +21,9 @@
   <body>
     <nav>
       <header role="banner">
-        <h1>HTML Review Resources: <code>&lt;nav&gt;</code></h1>
+        <h1>HTML Review Resources: <code>&lt;Span&gt;</code></h1>
         <p>
-          The nav element provides navigation links within the document.
+        A page that tells about the &lt;span&gt; element.
         </p>
       </header>
       <!-- nav elements go within a semantic nav element -->
@@ -72,13 +72,14 @@
         ============================================================ -->
       <article>
         <header>
-          <h2>The Navigation Section Element</h2>
+          <h2>MDN Definitions</h2>
         </header>
         <!-- Enter definition from MDN in the blockquote element below -->
         <blockquote id="definition">
-          The HTML nav element represents a section of a page whose purpose is to provide navigation links, either within the current document or to other documents. Common examples of navigation sections are menus, tables of contents, and indexes.
+          The HTML &lt;span&gt; element is the inline version
+          of the &lt;div&gt; element and does not represent anything.
         </blockquote>
-
+       
         <!-- =============================================================
           SEMANTICS
             - How is this element expected to be used?
@@ -86,9 +87,11 @@
           ============================================================ -->
         <section>
           <h3>Semantic Considerations</h3>
-          <p>Navigation landmarks provide a way to identify groups of links that are intended to be used for website or page content navigation.</p>
+          <p>
+            The &lt;span&gt; is used for phrasing and styling content.It should 
+            be used only when no other semanticelement is being used.
+          </p>
         </section>
-
         <!-- =============================================================
           ATTRIBUTES AND VALUES
             - What attributes and values are important to understand?
@@ -97,10 +100,11 @@
           ============================================================ -->
         <section>
           <h3>Common Attributes and Values</h3>
-          <ul>
-            <li>Global attributes (can be used in all html elements)- Ex: accesskey, dir, id, and translate</li>
-            <li>Event Attributes(where events trigger actions in html)</li>
-          </ul>
+          <p>
+            Only global attributes apply to the nav element. 
+            Global attributes are shared by all html elements.
+            The a element, or anchor element, is used to link URL addresses. 
+          </p>
         </section>
 
         <!-- =============================================================
@@ -111,11 +115,14 @@
               information is important and time-sensitive," which you 
               might otherwise convey through the visual design.
           ============================================================ -->
+
         <section>
           <h3>Accessibility Considerations</h3>
-          <ul>
-            <li> role = "navigation" is a collection of navigational elements for navigating the document.</li>
-          </ul>
+          <p>
+            The &lt;span&gt; is commonly found with a link role to identify 
+            an element that creates a hyperlink to a resource. The screen reader
+            announces text of the link as well as the fact that it is a link. 
+          </p>
         </section>
 
         <!-- =============================================================
@@ -126,35 +133,35 @@
             - Reuse the <p> - <pre> combination for each example.
           ============================================================ -->
         <section>
-          <h3>Example Uses</h3>
+          <h3>Example Uses of &lt;span&gt;</h3>
           <p>
-            Create navigation menus with unordered lists of links:
+            <span>
+              Insert any text that you could think of here.
+            </span>
           </p>
+          <body>
+          <p> 
+          <span style = "color:dodgerblue;"> This one is in color </span>
+          </p>
+          </body>
+          <blockquote id= "Here is the first line
+          Here is the second with no spaces
+            Here is the third with 2 spaces added to it.">
+          </blockquote>
           <!-- Pay attention to how pre elements observe all whitespace -->
-          <pre>&lt;nav&gt;
-  &lt;ul&gt;
-    &lt;li&gt;&lt;a href="about.html">&gt;About&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="careers.html">&gt;Careers&lt;/a&gt;&lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/nav&gt;</pre>
+          <pre>
+          </pre>
         </section>
-
         <!-- =============================================================
           SOURCES AND RESOURCES
             - Enter linked sources and other resources within an 
               unordered list with links and meaningful labels. 
           ============================================================ -->
         <footer role="contentinfo">
-          <h3>Resources</h3>
           <ul>
-            <li>
-              <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav">MDN's Navigation element</a></li>
-            <li>
-              <a href="https://www.w3.org/TR/wai-aria-practices/#aria_lh_navigation">W3 ARIA Navigation Practices</a></li>
-            <li>
-              <a href="https://developer.paciellogroup.com/blog/2013/02/using-wai-aria-landmarks-2013/">ARIA Landmarks</a></li>
-            <li>
-              <a href="https://www.geeksforgeeks.org/html-nav-tag/">HTML Geeks: &lt;nav&gt; element</a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/span">&lt;span&gt;</a>Last modified: Feb 10, 2021, by MDN contributors</li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_link_role#aria_attributes_used">Using the link role</a>Last modified: Jan 2, 2021, by MDN contributors<li>
+            <li><a href="https://www.tutorialspoint.com/html/html_span_tag.htm">HTML - &lt;span&gt; Tag</a>tutorialspoint.com</li>
           </ul>
         </footer>
       </article>

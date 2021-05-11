@@ -7,7 +7,7 @@
   <head>
 
     <!-- Meta Tags -->
-    <title>Main Page</title>
+    <title>&lt;main&gt; Element</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- a viewport declaration which does not disable zooming -->
@@ -21,7 +21,7 @@
   <body>
     <nav>
       <header role="banner">
-        <h1>HTML Review Resources: <code>&lt;Main&gt;</code></h1>
+        <h1>HTML Review Resources: <code>&lt;main&gt;</code></h1>
         <p>
           The main element designates where the primary content of your web page goes, i.e. the purpose of your web page.
         </p>
@@ -72,11 +72,11 @@
         ============================================================ -->
       <article>
         <header>
-          <h2>The Purpose of Your Webpage</h2>
+          <h2>Overview of <code>main</code></h2>
         </header>
         <!-- Enter definition from MDN in the blockquote element below -->
         <blockquote id="definition">
-          The HTML [main] element represents the dominant content of the body of a document. The main content area consists of content that is directly related to or expands upon the central topic of a document, or the central functionality of an application.
+          The HTML <code>main</code> element represents the dominant content of the body of a document. The main content area consists of content that is directly related to or expands upon the central topic of a document, or the central functionality of an application.
         </blockquote>
 
         <!-- =============================================================
@@ -86,7 +86,9 @@
           ============================================================ -->
         <section>
           <h3>Semantic Considerations</h3>
-          <p>Main is where the primary content (the purpose) of the web page goes. Artical, heading, and paragraph tags are typically wrapped in the main tags.</p>
+          <p>
+            <code>main</code> is where the primary content (the purpose) of the web page goes. Artical, heading, and paragraph tags are typically wrapped in the main tags.
+          </p>
         </section>
 
         <!-- =============================================================
@@ -98,8 +100,8 @@
         <section>
           <h3>Common Attributes and Values</h3>
           <ul>
-            <li>global attributes</li>
-            <li>role attribute is important for accessibility</li>
+            <li>global attributes, which can be used with all attributes (examples include class and id)</li>
+            <li>role attribute, specifically, is important for accessibility</li>
           </ul>
         </section>
 
@@ -113,7 +115,9 @@
           ============================================================ -->
         <section>
           <h3>Accessibility Considerations</h3>
-          <p>Main is typically assign a landmark role. Only one element can be assigned the main landmark role</p>
+          <p>
+            <code>main</code> is typically assigned a landmark role. Only one element can be assigned the main landmark role.
+          </p>
           <ul>
              <li>role (attribute)</li>
              <li>"main" (value)</li>
@@ -132,16 +136,21 @@
         <section>
           <h3>Example Uses</h3>
           <p>
-            Main doesn't contribute to the DOM's structure; it's purely informational.
+            <code>main</code> doesn't contribute to the DOM's structure; it's purely informational.
           </p>
           <p>
-            Main should wrap content that is unique to the page, not repeated across a set of documents.
+            <code>main</code> should wrap content that is unique to the page, not repeated across a set of documents.
           </p>
-          <p>Main goes in the body section and can wrap headings, paragraphs, and articles.</p>
+          <p>
+            <code>main</code> goes in the body section and can wrap headings, paragraphs, and articles.
+          </p>
           <!-- Pay attention to how pre elements observe all whitespace -->
-          <pre>Here is the first line
-Here is the second with no spaces
-  Here is the third with 2 spaces added to it.
+          <pre>&lt;main&gt; 
+            &lt;h2&gt;Topic 1 of main section&lt;/h2&gt; 
+            &lt;p&gt;Vital paragraph content&lt;/p&gt; 
+            &lt;h2&gt;Developing the main topic&lt;/h2&gt; 
+            &lt;p&gt;More central content&lt;/p&gt; 
+    &lt;/main&gt; 
           </pre>
         </section>
 
@@ -152,11 +161,13 @@ Here is the second with no spaces
           ============================================================ -->
         <footer role="contentinfo">
           <ul>
-              <li>https://www.w3.org/TR/wai-aria-1.1/#Properties</li>
-              <li>https://www.youtube.com/watch?v=IhWMou12_Vk</li>
-              <li>https://www.nomensa.com/blog/2010/what-are-wai-aria-document-landmark-roles</li>
-              <li>https://www.washington.edu/accessibility/web/landmarks/</li>
-              <li>https://www.w3schools.com/tags/tag_main.asp</li>
+              <li><a href="https://www.w3.org/TR/wai-aria-1.1/#Properties">Accessible Rich Internet Applications</a> by World Wide Web Consortium. 14 December 2017.</li>
+              <li><a href="https://www.youtube.com/watch?v=IhWMou12_Vk">How ARIA landmark roles help screen reader users</a> by Nomensa on YouTube. 29 June 2011.</li>
+              <li><a href="https://www.nomensa.com/blog/2010/what-are-wai-aria-document-landmark-roles">What are WAI-ARIA Document Landmark Roles</a>by Leonie Watson on Nomensa. 23 February 2010.</li>
+              <li><a href="https://www.washington.edu/accessibility/web/landmarks/">ARIA Landmark Roles</a> by University of Washington.</li>
+              <li><a href="https://www.w3schools.com/tags/tag_main.asp">HTML &lt;MAIN&gt; Tag</a> by World Wide Web Consortium on w3schools. </li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/main">&lt;main&gt;</a> by Mozilla Developer Network. 18 December 2020.</li>
+              <li><a href="https://www.w3schools.com/tags/ref_standardattributes.asp">HTML Global Attributes</a> by World Wide Web Consortium on w3schools.</li>
           </ul>
         </footer>
       </article>
